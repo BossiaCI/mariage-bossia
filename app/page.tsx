@@ -10,21 +10,23 @@ import { ScheduleSection } from "@/components/wedding/schedule-section"
 import { RSVPSection } from "@/components/wedding/rsvp-section"
 import { Footer } from "@/components/wedding/footer"
 import { DroneGallery } from "@/components/wedding/gallery-section"
+import { ShelterSection } from "@/components/wedding/shelter-section"
 
 export default function WeddingPage() {
   return (
     <main id="accueil" className="min-h-screen">
       <Navigation />
       <HeroSection />
+      <CheckinSection />
+      <RSVPSection />
       <StorySection />
       <PassportSection />
       <ParachuteSection />
       <DroneGallery />
       <DepartureBoardSection />
-      <CheckinSection />
       <TravelSection />
-      <ScheduleSection />
-      <RSVPSection />
+      {/* <ScheduleSection /> */}
+      <ShelterSection />
       <Footer />
     </main>
   )

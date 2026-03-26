@@ -6,10 +6,10 @@ import { useRef } from "react"
 import { Stamp } from "lucide-react"
 
 const stamps = [
-  { city: "Paris", country: "France", date: "2019", emoji: "FR" },
-  { city: "Tokyo", country: "Japon", date: "2021", emoji: "JP" },
-  { city: "Santorin", country: "Grece", date: "2023", emoji: "GR" },
-  { city: "Lisbone", country: "Portugal", date: "2026", emoji: "IT" },
+  { city: "Paris", country: "France", date: "2026", emoji: "FR" },
+  { city: "Portugal", country: "Lisbonne", date: "2026", emoji: "PT" },
+  { city: "Angola", country: "Luanda", date: "2026", emoji: "AG" },
+  { city: "Côte d’Ivoire", country: "Abidjan", date: "2026", emoji: "CI" },
 ]
 
 export function PassportSection() {
@@ -27,11 +27,11 @@ export function PassportSection() {
           className="text-center mb-10 sm:mb-16"
         >
           <p className="text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase text-muted-foreground mb-3 sm:mb-4">
-            Nos Aventures
+            Participez à notre aventure
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-4 sm:mb-6 text-balance">
+          {/* <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-4 sm:mb-6 text-balance">
             Notre Passeport
-          </h2>
+          </h2> */}
         </motion.div>
 
         {/* Passport Book */}
@@ -87,7 +87,8 @@ export function PassportSection() {
                     </div>
                     <div>
                       <p className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider mb-0.5 sm:mb-1">Destination</p>
-                      <p className="font-serif text-foreground text-sm sm:text-base">Mariage Eternel</p>
+                      <p className="font-serif text-foreground text-sm sm:text-base">Quinta do Roseiral - Ericeira, Portugal</p>
+                      <p className="font-serif text-foreground text-sm sm:text-base">Estrada de Santo Isidoro, 2655-000</p>
                     </div>
                     <div>
                       <p className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider mb-0.5 sm:mb-1">Date d'Emission</p>
@@ -95,7 +96,7 @@ export function PassportSection() {
                     </div>
                     <div>
                       <p className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider mb-0.5 sm:mb-1">Validite</p>
-                      <p className="font-serif text-foreground text-sm sm:text-base">Pour Toujours</p>
+                      <p className="font-serif text-foreground text-sm sm:text-base">de 15:30 à l’heure voulu par Dieu</p>
                     </div>
                   </div>
                 </div>

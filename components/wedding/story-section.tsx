@@ -7,24 +7,26 @@ import { MapPin, Heart, Sparkles } from "lucide-react"
 
 const storyTimeline = [
   {
-    year: "2018",
-    location: "Paris, France",
+    year: "4 Juin 2023",
+    location: "Ile-de-France, France",
     title: "La Rencontre",
-    description: "Un café parisien, une conversation qui n'en finit plus, et le début d'une belle aventure.",
+    description: "Bossia à proposé à Edénia de se retrouver au Parc de Sceaux, pour enfin se découvrir en vrai, après un mois d’échanges sur WhatsApp. Il arrive avec 1 heure et demie de retard, ayant perdu son train…",
+    description2:"Mais malgré cela, après qu’ Edénia s’est cachée entre les arbres pendant que Bossia la cherchait, leurs regards se sont croisés finalement… et ce qui n’était encore que de simples conversations est devenu, pour eux deux, une évidence.",
     icon: MapPin,
   },
   {
-    year: "2020",
-    location: "Tokyo, Japon",
-    title: "Premier Voyage",
-    description: "Notre premier voyage ensemble, entre temples ancestraux et modernité éblouissante.",
+    year: "12 Juin 2023",
+    location: "Lille, France",
+    title: "Officiellement en couple",
+    description: "Bossia invite Edénia à passer le week-end à Lille, où ils profitent d’un pique-nique au parc de la Citadelle et visitent le Zoo. Le 12 juin, avant le retour d’ Edénia à Paris, Bossia",
+    description2: "demande, en avance sur son anniversaire, le plus beau des cadeaux: devenir officiellement copains.",
     icon: Sparkles,
   },
   {
-    year: "2024",
-    location: "Santorin, Grèce",
-    title: "La Demande",
-    description: "Au coucher du soleil, devant les maisons blanches et la mer bleue, la question tant attendue.",
+    year: "10 août2024",
+    location: "Paris 14ème, France",
+    title: "Naissance d'Enola",
+    description: "L’été suivant, ils s’installent ensemble près du cœur de Paris. Quelques mois après, naît Enola, et avec elle surgit naturellement le désir de sceller leur amour par le mariage.",
     icon: Heart,
   },
 ]
@@ -44,13 +46,13 @@ export function StorySection() {
           className="text-center mb-16"
         >
           <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
-            Notre parcours
+            la Rencontre
           </p>
           <h2 className="font-serif text-4xl md:text-6xl text-foreground mb-6 text-balance">
-            Une Histoire d&apos;Amour
+            Au Parc des Sceaux
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Deux cœurs voyageurs qui se sont trouvés et ne se quittent plus
+            Deux cœurs voyageurs qui se sont trouvés
           </p>
         </motion.div>
 
@@ -98,6 +100,7 @@ function TimelineItem({ item, index }: { item: typeof storyTimeline[0]; index: n
           </div>
           <h3 className="font-serif text-2xl text-foreground mb-3">{item.title}</h3>
           <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+          <p className="text-muted-foreground leading-relaxed">{item?.description2}</p>
         </div>
       </div>
 

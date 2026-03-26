@@ -10,26 +10,26 @@ const travelInfo = [
   {
     icon: Plane,
     title: "Par Avion",
-    description: "Aeroport International de Lisbone (FLR) a 45 min du lieu de reception",
-    details: "Navettes organisees depuis l'aeroport",
+    description: "Aeroporto Humberto Delgado de Lisboa, à 43km du lieu de réception.",
+    details: "",
   },
   {
     icon: Hotel,
     title: "Hebergement",
-    description: "Villa Toscana - Chambre reservee pour les invites",
-    details: "Code promo: EdéniaBOSSIA2026",
+    description: "Pour voir nos hébergements favoris près du lieu de réception, voir prochaine section.",
+    details: "",
   },
   {
     icon: Car,
-    title: "Sur Place",
-    description: "Voitures avec chauffeur disponibles pour tous les trajets",
-    details: "Service 24h/24 pendant le week-end",
+    title: "Par Voiture (Taxi, Uber)",
+    description: "Prendre l’autoroute A8 en direction de Mafra. Puis continuer sur la route A21 en direction d’Ericeira.",
+    details: "",
   },
   {
     icon: MapPin,
     title: "Le Lieu",
-    description: "Chateau di Vincigliata, au coeur de la Toscane",
-    details: "Un cadre feerique pour notre union",
+    description: "“Quinta do Roseiral” - Estrada de Sto Isidoro, 2655-000 Ericeira, Portugal",
+    details: "",
   },
 ]
 

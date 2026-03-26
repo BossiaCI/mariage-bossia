@@ -7,46 +7,64 @@ import { Plane, Clock, CheckCircle2 } from "lucide-react"
 
 const flights = [
   {
-    flight: "EB-2026",
-    destination: "Lisbone",
-    gate: "LOVE",
-    time: "15:00",
+    flight: "EB-26.09",
+    destination: "Ericeira, Portugal",
+    gate: "QUINTA DO ROSEIRAL",
+    time: "15:30",
     status: "ON TIME",
     statusShort: "OK",
     statusColor: "text-green-600",
   },
   {
-    flight: "WED-001",
+    flight: "EB-016",
     destination: "CEREMONIE",
-    gate: "A1",
-    time: "15:00",
+    gate: "JARDINS",
+    time: "16:00",
     status: "BOARDING",
     statusShort: "EMB",
     statusColor: "text-amber-600",
   },
   {
-    flight: "WED-002",
+    flight: "EB-017",
     destination: "COCKTAIL",
-    gate: "JARDINS",
+    gate: "TERRASSE",
     time: "17:00",
     status: "ON TIME",
     statusShort: "OK",
     statusColor: "text-green-600",
   },
   {
-    flight: "WED-003",
-    destination: "DINER GALA",
-    gate: "TERRASSE",
+    flight: "EB-019",
+    destination: "DINER",
+    gate: "GRAND SALON",
     time: "19:30",
     status: "ON TIME",
     statusShort: "OK",
     statusColor: "text-green-600",
   },
   {
-    flight: "WED-004",
-    destination: "SOIREE",
-    gate: "GRAND HALL",
+    flight: "EB-022",
+  destination: "COUPURE DU GATEAU",
+    gate: "JARDINS",
     time: "22:00",
+    status: "DELAYED",
+    statusShort: "RETARD",
+    statusColor: "text-red-600",
+  },
+  {
+    flight: "EB-223",
+    destination: "OUVERTURE DU BAL",
+    gate: "GRAND SALON",
+    time: "22:30",
+    status: "DELAYED",
+    statusShort: "RETARD",
+    statusColor: "text-red-600",
+  },
+  {
+    flight: "EB-023",
+    destination: "BUFFET LIBRE",
+    gate: "GRAND SALON",
+    time: "23:00",
     status: "ON TIME",
     statusShort: "OK",
     statusColor: "text-green-600",
@@ -106,7 +124,7 @@ export function DepartureBoardSection() {
           className="text-center mb-8 sm:mb-12"
         >
           <p className="text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase text-accent mb-3 sm:mb-4">
-            Aeroport International du Mariage
+            Aeroport International de Lisbonne
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-background mb-4 text-balance">
             Tableau des Departs
@@ -215,7 +233,7 @@ export function DepartureBoardSection() {
           transition={{ duration: 0.8, delay: 1.5 }}
           className="text-center mt-6 sm:mt-8 text-background/60 text-xs sm:text-sm italic px-4"
         >
-          "Les passagers du vol EB-2026 a destination de Lisbone sont invites a se presenter porte LOVE"
+          « Embarquement du vol EB-26.09 à destination de Lisbonne – Ericeira. Les passagers sont invités à rejoindre la porte d’embarquement 016. »
         </motion.p>
       </div>
     </section>

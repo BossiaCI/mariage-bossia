@@ -46,10 +46,10 @@ export function CheckinSection() {
             <span className="text-xs sm:text-sm tracking-wider uppercase text-accent">Zone d'Enregistrement</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-4 sm:mb-6 text-balance">
-            Check-in Mariage
+            Confirmation de presence au Mariage
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-            Suivez ces etapes simples pour vous enregistrer a notre celebration
+            Merci de réaliser votre Check-in 1 mois avant l'événement.
           </p>
         </motion.div>
 
@@ -64,33 +64,40 @@ export function CheckinSection() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0 mb-4 sm:mb-6">
               <div className="flex items-center gap-2 sm:gap-3">
                 <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-green-400 animate-pulse" />
-                <span className="text-primary-foreground/70 text-xs sm:text-sm uppercase tracking-wider">Comptoir Ouvert</span>
+                <span className="text-primary-foreground/70 text-xs sm:text-sm uppercase tracking-wider">CHeck-in Ouvert</span>
               </div>
               <span className="bg-accent text-accent-foreground px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs sm:text-sm font-medium">
-                Comptoir N°1
+                Vol EB-26.09
               </span>
             </div>
             
             <div className="bg-background/10 rounded-lg p-4 sm:p-6 text-center">
-              <p className="text-primary-foreground/60 text-xs sm:text-sm mb-1 sm:mb-2">Prochain embarquement</p>
-              <p className="font-serif text-2xl sm:text-4xl md:text-5xl text-primary-foreground mb-1 sm:mb-2">26 Septembre 2026</p>
-              <p className="text-primary-foreground/80 text-sm sm:text-base">Vol EB-2026 vers Lisbone</p>
+              {/* <p className="text-primary-foreground/60 text-xs sm:text-sm mb-1 sm:mb-2">S'il vous-plaît, confirmez votre présence en ligne avant le 26 août 2026.</p> */}
+              {/* <p className="font-serif text-2xl sm:text-4xl md:text-5xl text-primary-foreground mb-1 sm:mb-2">26 Septembre 2026</p> */}
+              <p className="text-primary-foreground/80 text-sm sm:text-base">S'il vous-plaît, confirmez votre présence en ligne avant le 26 août 2026.</p>
+              <p className="text-primary-foreground/80 text-sm sm:text-base">Chaque invitation compte pour nous ; conservez précieusement.</p>
             </div>
 
             <div className="mt-4 sm:mt-6 grid grid-cols-3 gap-2 sm:gap-4 text-center">
               <div>
                 <p className="text-primary-foreground/60 text-[10px] sm:text-xs uppercase mb-0.5 sm:mb-1">Classe</p>
+                <p className="text-primary-foreground font-medium text-sm sm:text-base">First Class</p>
                 <p className="text-primary-foreground font-medium text-sm sm:text-base">VIP</p>
               </div>
               <div>
                 <p className="text-primary-foreground/60 text-[10px] sm:text-xs uppercase mb-0.5 sm:mb-1">Bagages</p>
-                <p className="text-primary-foreground font-medium text-sm sm:text-base">Illimites</p>
+                <p className="text-primary-foreground font-medium text-sm sm:text-base">Tenue de soirée élégante.</p>
+                <p className="text-primary-foreground font-medium text-sm sm:text-base">Merci d’éviter les tenues blanches.</p>
               </div>
               <div>
-                <p className="text-primary-foreground/60 text-[10px] sm:text-xs uppercase mb-0.5 sm:mb-1">Repas</p>
-                <p className="text-primary-foreground font-medium text-sm sm:text-base">Gala</p>
+                <p className="text-primary-foreground/60 text-[10px] sm:text-xs uppercase mb-0.5 sm:mb-1">Interdits en Cabine</p>
+                <p className="text-primary-foreground font-medium text-sm sm:text-base">Accès réservé aux invités figurant sur la liste et munis d’une invitation.</p>
               </div>
             </div>
+            <div className="bg-background/3 rounded-lg mt-4 sm:mt-6 text-center">
+              <p className="text-primary-foreground/80 text-sm sm:text-base">😁 N’oubliez pas votre plus beau sourire et votre envie de faire la fête avec nous. 🕺🏾💃🏽</p>
+            </div>
+            
           </div>
         </motion.div>
 

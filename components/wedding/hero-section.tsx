@@ -40,8 +40,18 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
           className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6"
         >
-          Embarquez pour notre plus beau voyage
+          Catarina Lima et António Lima     &    Daha Clément
         </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-sm tracking-[0.3em] text-muted-foreground mb-6"
+        >
+          ont l’honneur de vous annoncer l'union de leurs enfants
+        </motion.p>
+
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -79,7 +89,7 @@ export function HeroSection() {
           className="space-y-4"
         >
           <p className="text-lg md:text-xl text-muted-foreground font-light tracking-wide">
-            Nous avons le plaisir de vous convier à notre mariage
+            Qui se marieront à Ericeira, Portugal le:
           </p>
           <p className="font-serif text-3xl md:text-4xl text-primary font-medium">
             26 Septembre 2026
@@ -99,7 +109,7 @@ export function HeroSection() {
           transition={{ duration: 2, repeat: Infinity }}
           className="flex flex-col items-center gap-2 text-muted-foreground"
         >
-          <span className="text-xs tracking-widest uppercase">Découvrir</span>
+          <span className="text-xs tracking-widest uppercase">Plus de détails</span>
           <div className="w-px h-8 bg-muted-foreground/50" />
         </motion.div>
       </motion.div>
