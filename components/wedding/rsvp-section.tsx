@@ -41,8 +41,9 @@ export function RSVPSection() {
             RSVP
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Merci de nous confirmer votre présence avant le 1er Juin 2026
+            Merci de nous confirmer votre présence avant le 15 Juillet 2026
           </p>
+          <p><strong>Nombre d’accompagnants (Assurez-vous qu'ils ont bien été invités par les mariés.)</strong></p>
         </motion.div>
 
         <motion.div

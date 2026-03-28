@@ -452,14 +452,14 @@ export function DroneGallery() {
           animate={{ rotate: 360 }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
         >
-          🌸
+          {/* 🌸 */}
         </motion.div>
         <motion.div
           className="absolute bottom-20 right-20 text-5xl"
           animate={{ rotate: -360 }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
         >
-          💐
+          {/* 💐 */}
         </motion.div>
         <motion.div
           className="absolute top-1/3 right-10 text-4xl"

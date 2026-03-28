@@ -34,14 +34,64 @@ export function HeroSection() {
 
       {/* Main content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6"
-        >
-          Catarina Lima et António Lima     &    Daha Clément
-        </motion.p>
+        <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
+            <div className="">
+                <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4"
+                >
+                Catarina Lima
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4"
+                >
+                & 
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4"
+                >
+                António Lima
+              </motion.p>
+            </div>
+            <div className="col-span-1 flex items-center justify-center">
+              <span className="font-serif text-2xl md:text-3xl text-accent italic">ET</span>
+            </div>
+            <div className="">
+                <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4"
+                >
+                Feu Adjorlolo Grâce
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4"
+                >
+                & 
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4"
+                >
+                Daha Clément
+              </motion.p>
+            </div>
+        </div>
+
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -52,35 +102,41 @@ export function HeroSection() {
           ont l’honneur de vous annoncer l'union de leurs enfants
         </motion.p>
 
-
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="font-serif text-6xl md:text-8xl lg:text-9xl font-medium text-foreground mb-4 text-balance"
-        >
-          Edénia
-        </motion.h1>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="flex items-center justify-center gap-4 my-6"
-        >
-          <span className="w-16 md:w-24 h-px bg-accent" />
-          <span className="font-serif text-2xl md:text-3xl text-accent italic">&</span>
-          <span className="w-16 md:w-24 h-px bg-accent" />
-        </motion.div>
-
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
-          className="font-serif text-6xl md:text-8xl lg:text-9xl font-medium text-foreground mb-12 text-balance"
-        >
-          Bossia
-        </motion.h1>
+        <div className="grid grid-cols-3 gap-3 p-4 sm:gap-4 md:gap-5 mb-8 sm:mb-12">
+            <div className="col-span-1 flex items-center justify-center">
+                 <motion.h1
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.2 }}
+                  className="font-serif  sm:text-2xl text-6xl md:text-8xl lg:text-9xl font-medium text-foreground mb-4 text-balance"
+                >
+                  Edénia
+              </motion.h1>
+            </div>
+            <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                className="flex items-center justify-center gap-3 my-6"
+              >
+                {/* <span className="w-16 md:w-15 h-px bg-accent" /> */}
+                {/* <span className="font-serif text-2xl md:text-3xl text-accent italic">&</span> */}
+                <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+                    <span className="font-serif text-2xl md:text-3xl text-accent italic">&</span>
+                  </div>
+                {/* <span className="w-16 md:w-15 h-px bg-accent" /> */}
+            </motion.div>
+            <div className="col-span-1 flex items-center justify-center">
+                <motion.h1
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.2 }}
+                  className="font-serif  sm:text-2xl text-6xl md:text-8xl lg:text-9xl font-medium text-foreground mb-4 text-balance"
+                >
+                  Bossia
+              </motion.h1>
+            </div>
+        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

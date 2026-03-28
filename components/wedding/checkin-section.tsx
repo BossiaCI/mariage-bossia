@@ -3,24 +3,24 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { UserCheck, Luggage, Ticket, ArrowRight, ArrowDown, Sparkles } from "lucide-react"
+import { UserCheck, Luggage, Ticket, ArrowRight, ArrowDown, Sparkles,  } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const checkinSteps = [
   {
-    step: 1,
+    step: "Classe VIP",
     icon: Ticket,
     title: "Votre Invitation",
     description: "Conservez precieusement votre invitation, elle est votre billet d'embarquement pour cette aventure magique.",
   },
   {
-    step: 2,
+    step: "Interdits en Cabine",
     icon: UserCheck,
     title: "Enregistrement RSVP",
     description: "Confirmez votre presence en ligne avant le 15 Juillet 2026. Chaque invite compte pour nous.",
   },
   {
-    step: 3,
+    step: "Bagages",
     icon: Luggage,
     title: "Preparez vos Bagages",
     description: "Tenue de soiree elegante. N'oubliez pas votre plus beau sourire et votre envie de faire la fete!",
@@ -74,25 +74,25 @@ export function CheckinSection() {
             <div className="bg-background/10 rounded-lg p-4 sm:p-6 text-center">
               {/* <p className="text-primary-foreground/60 text-xs sm:text-sm mb-1 sm:mb-2">S'il vous-plaît, confirmez votre présence en ligne avant le 26 août 2026.</p> */}
               {/* <p className="font-serif text-2xl sm:text-4xl md:text-5xl text-primary-foreground mb-1 sm:mb-2">26 Septembre 2026</p> */}
-              <p className="text-primary-foreground/80 text-sm sm:text-base">S'il vous-plaît, confirmez votre présence en ligne avant le 26 août 2026.</p>
+              <p className="text-primary-foreground/80 text-sm sm:text-base">S'il vous-plaît, confirmez votre présence en ligne avant le 15 Juillet 2026.</p>
               <p className="text-primary-foreground/80 text-sm sm:text-base">Chaque invitation compte pour nous ; conservez précieusement.</p>
             </div>
 
             <div className="mt-4 sm:mt-6 grid grid-cols-3 gap-2 sm:gap-4 text-center">
-              <div>
+              {/* <div>
                 <p className="text-primary-foreground/60 text-[10px] sm:text-xs uppercase mb-0.5 sm:mb-1">Classe</p>
                 <p className="text-primary-foreground font-medium text-sm sm:text-base">First Class</p>
                 <p className="text-primary-foreground font-medium text-sm sm:text-base">VIP</p>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <p className="text-primary-foreground/60 text-[10px] sm:text-xs uppercase mb-0.5 sm:mb-1">Bagages</p>
                 <p className="text-primary-foreground font-medium text-sm sm:text-base">Tenue de soirée élégante.</p>
                 <p className="text-primary-foreground font-medium text-sm sm:text-base">Merci d’éviter les tenues blanches.</p>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <p className="text-primary-foreground/60 text-[10px] sm:text-xs uppercase mb-0.5 sm:mb-1">Interdits en Cabine</p>
                 <p className="text-primary-foreground font-medium text-sm sm:text-base">Accès réservé aux invités figurant sur la liste et munis d’une invitation.</p>
-              </div>
+              </div> */}
             </div>
             <div className="bg-background/3 rounded-lg mt-4 sm:mt-6 text-center">
               <p className="text-primary-foreground/80 text-sm sm:text-base">😁 N’oubliez pas votre plus beau sourire et votre envie de faire la fête avec nous. 🕺🏾💃🏽</p>
@@ -121,7 +121,7 @@ export function CheckinSection() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <span className="inline-block bg-primary/10 text-primary text-[10px] sm:text-xs font-medium px-1.5 sm:px-2 py-0.5 sm:py-1 rounded mb-1.5 sm:mb-2">
-                        Etape {step.step}
+                        {step.step}
                       </span>
                       <h3 className="font-serif text-lg sm:text-xl text-foreground mb-1 sm:mb-2">{step.title}</h3>
                       <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">{step.description}</p>
