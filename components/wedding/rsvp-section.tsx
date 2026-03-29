@@ -41,7 +41,7 @@ export function RSVPSection() {
             RSVP
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Merci de nous confirmer votre présence avant le 15 Juillet 2026
+            Nous vous remercions de confirmer votre présence avant le 1er août 2026.
           </p>
           <p><strong>Nombre d’accompagnants (Assurez-vous qu'ils ont bien été invités par les mariés.)</strong></p>
         </motion.div>
@@ -107,13 +107,13 @@ export function RSVPSection() {
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="yes" id="yes" />
                     <Label htmlFor="yes" className="cursor-pointer font-normal">
-                      Avec joie ! Je serai présent(e)
+                      C'est avec plaisir que je serai présent(e) !
                     </Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="no" id="no" />
                     <Label htmlFor="no" className="cursor-pointer font-normal">
-                      Malheureusement, je ne pourrai pas venir
+                      Malheureusement, je ne pourrai pas être présent(e).
                     </Label>
                   </div>
                 </RadioGroup>
@@ -126,7 +126,7 @@ export function RSVPSection() {
                   className="space-y-6"
                 >
                   <div className="space-y-2">
-                    <Label htmlFor="guests">Nombre d&apos;accompagnants</Label>
+                    <Label htmlFor="guests">Nombre d&apos;accompagnants (veillez à ce qu'ils soient bien invités par les mariés)</Label>
                     <Input
                       id="guests"
                       type="number"

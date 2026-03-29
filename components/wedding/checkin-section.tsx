@@ -11,19 +11,19 @@ const checkinSteps = [
     step: "Classe VIP",
     icon: Ticket,
     title: "Votre Invitation",
-    description: "Conservez precieusement votre invitation, elle est votre billet d'embarquement pour cette aventure magique.",
+    description: "Merci de confirmer votre présence en ligne avant le 26 août 2026. Chaque invitation est précieuse pour nous ; gardez-la précieusement.",
   },
   {
     step: "Interdits en Cabine",
     icon: UserCheck,
     title: "Accès Réservé",
-    description: "Accès réservé aux invités figurant sur la liste et munis d’une invitation. Merci de respecter les consignes pour assurer une expérience agréable à tous.",
+    description: "Accès réservé exclusivement aux invités figurant sur la liste e munis de leur invitation virtuelle.",
   },
   {
     step: "Bagages",
     icon: Luggage,
     title: "Preparez vos Bagages",
-    description: "Tenue de soiree elegante. N'oubliez pas votre plus beau sourire et votre envie de faire la fete!",
+    description: "Tenue de gala. Merci d'ÉVITER les vêtements blancs !",
   },
 ]
 
@@ -49,7 +49,7 @@ export function CheckinSection() {
             Confirmation de presence au Mariage
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-            Merci de réaliser votre Check-in 1 mois avant l'événement.
+            Veuillez effectuer votre « check-in » au plus tard un mois avant l'événement.
           </p>
         </motion.div>
 
@@ -74,8 +74,7 @@ export function CheckinSection() {
             <div className="bg-background/10 rounded-lg p-4 sm:p-6 text-center">
               {/* <p className="text-primary-foreground/60 text-xs sm:text-sm mb-1 sm:mb-2">S'il vous-plaît, confirmez votre présence en ligne avant le 26 août 2026.</p> */}
               {/* <p className="font-serif text-2xl sm:text-4xl md:text-5xl text-primary-foreground mb-1 sm:mb-2">26 Septembre 2026</p> */}
-              <p className="text-primary-foreground/80 text-sm sm:text-base">S'il vous-plaît, confirmez votre présence en ligne avant le 15 Juillet 2026.</p>
-              <p className="text-primary-foreground/80 text-sm sm:text-base">Chaque invitation compte pour nous ; conservez précieusement.</p>
+              <p className="text-primary-foreground/80 text-sm sm:text-base">😁 N’oubliez pas votre plus beau sourire et votre envie de faire la fête avec nous. 🕺🏾💃🏽</p>
             </div>
 
             <div className="mt-4 sm:mt-6 grid grid-cols-3 gap-2 sm:gap-4 text-center">
@@ -93,9 +92,6 @@ export function CheckinSection() {
                 <p className="text-primary-foreground/60 text-[10px] sm:text-xs uppercase mb-0.5 sm:mb-1">Interdits en Cabine</p>
                 <p className="text-primary-foreground font-medium text-sm sm:text-base">Accès réservé aux invités figurant sur la liste et munis d’une invitation.</p>
               </div> */}
-            </div>
-            <div className="bg-background/3 rounded-lg mt-4 sm:mt-6 text-center">
-              <p className="text-primary-foreground/80 text-sm sm:text-base">😁 N’oubliez pas votre plus beau sourire et votre envie de faire la fête avec nous. 🕺🏾💃🏽</p>
             </div>
             
           </div>
