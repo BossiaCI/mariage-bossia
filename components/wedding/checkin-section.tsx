@@ -16,8 +16,8 @@ const checkinSteps = [
   {
     step: "Interdits en Cabine",
     icon: UserCheck,
-    title: "Enregistrement RSVP",
-    description: "Confirmez votre presence en ligne avant le 15 Juillet 2026. Chaque invite compte pour nous.",
+    title: "Accès Réservé",
+    description: "Accès réservé aux invités figurant sur la liste et munis d’une invitation. Merci de respecter les consignes pour assurer une expérience agréable à tous.",
   },
   {
     step: "Bagages",
