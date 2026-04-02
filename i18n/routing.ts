@@ -9,7 +9,12 @@ export const routing = defineRouting({
   pathnames: {
     '/': '/',
     '/pathnames': {
-      pt: '/nomes-de-caminho'
-    }
+      pt: '/nomes-de-caminho',
+      fr: '/noms-de-chemin',
+    },
+    '/rsvp/list': {
+        fr: '/rsvp/liste',
+        pt: '/rsvp/lista'
+      }
   }
 });

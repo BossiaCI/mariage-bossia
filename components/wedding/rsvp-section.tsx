@@ -1,6 +1,6 @@
 "use client"
 
-import React from "react"
+import React, { useTransition } from "react"
 
 import { useState } from "react"
 import { motion } from "framer-motion"
@@ -14,7 +14,12 @@ import { Textarea } from "@/components/ui/textarea"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { useTranslations } from "next-intl"
 
+import { createConfirmation } from "@/app/actions/rsvp"
+
+
 export function RSVPSection() {
+
+  const [pending, startTransition] = useTransition();
 
   const t = useTranslations('Rsvp');
   
@@ -23,10 +28,23 @@ export function RSVPSection() {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [attendance, setAttendance] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault()
+  //   createConfirmation(new FormData(e.currentTarget as HTMLFormElement))
+  //   setIsSubmitted(true)
+    
+  // }
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.currentTarget);
+
+    await createConfirmation(formData);
+
     setIsSubmitted(true)
-  }
+  };
+
 
   return (
     <section id="rsvp" className="py-24 md:py-32 bg-background">
@@ -78,6 +96,7 @@ export function RSVPSection() {
                   <Label htmlFor="firstName">{t('firstName')}</Label>
                   <Input
                     id="firstName"
+                    name="firstName"
                     placeholder={t('placeholderFirstName')}
                     required
                     className="bg-background"
@@ -87,6 +106,7 @@ export function RSVPSection() {
                   <Label htmlFor="lastName">{t('lastName')}</Label>
                   <Input
                     id="lastName"
+                    name="lastName"
                     placeholder={t('placeholderLastName')}
                     required
                     className="bg-background"
@@ -98,6 +118,7 @@ export function RSVPSection() {
                 <Label htmlFor="email">{t('email')}</Label>
                 <Input
                   id="email"
+                  name="email"
                   type="email"
                   placeholder={t('placeholderEmail')}
                   required
@@ -134,6 +155,7 @@ export function RSVPSection() {
                     <Input
                       id="guests"
                       type="number"
+                      name="guests"
                       min="0"
                       max="5"
                       defaultValue="0"
@@ -145,6 +167,7 @@ export function RSVPSection() {
                     <Label htmlFor="dietary">{t('dietary')}</Label>
                     <Input
                       id="dietary"
+                      name="dietary"
                       placeholder={t('placeholderDietary')}
                       className="bg-background"
                     />
@@ -156,13 +179,14 @@ export function RSVPSection() {
                 <Label htmlFor="message">{t('message')}</Label>
                 <Textarea
                   id="message"
+                  name="message"
                   placeholder={t('placeholderMessage')}
                   rows={4}
                   className="bg-background resize-none"
                 />
               </div>
 
-              <Button type="submit" size="lg" className="w-full gap-2">
+              <Button type="submit" size="lg" className="w-full gap-2" disabled={pending}>
                 <Send className="w-4 h-4" />
                 {t('submit')}
               </Button>

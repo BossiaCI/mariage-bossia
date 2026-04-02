@@ -2,8 +2,12 @@
 
 import { motion } from "framer-motion"
 import { Globe2, Heart, Instagram, Mail } from "lucide-react"
+import { useTranslations } from "next-intl";
 
 export function Footer() {
+
+  const t = useTranslations('Footer');
+  
   return (
     <footer className="py-16 bg-primary text-primary-foreground">
       <div className="max-w-4xl mx-auto px-6 text-center">
@@ -15,7 +19,7 @@ export function Footer() {
         >
           <h2 className="font-serif text-5xl md:text-7xl mb-6">E & B</h2>
           <p className="text-lg opacity-80 mb-8 leading-relaxed">
-            26 Septembre 2026 • Lisbone, Portugal
+            {t('footerMessage')}
           </p>
 
           <div className="flex items-center justify-center gap-6 mb-12">

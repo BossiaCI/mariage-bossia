@@ -165,6 +165,10 @@
     "description4": "“Quinta do Roseiral” - Estrada de Sto Isidoro, 2655-000 Ericeira, Portugal"
   },
 
+  "Footer": {
+    "footerMessage": "26 Septembre 2026 • Lisbonne, Portugal"
+  },
+
 
   "NotFoundPage": {
     "description": "Please double-check the browser address bar or use the navigation to go to a known page.",

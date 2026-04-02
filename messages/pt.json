@@ -101,7 +101,7 @@
         "issue_date": "Data de Emissão",
         "validity": "Validade",
         "issue_date_value": "26 de Setembro de 2026",
-        "validity_value": "das 15:30 até a hora que Deus quiser",
+        "validity_value": "Das 15:30 até à hora que Deus quiser.",
         "city1": "Paris",
         "country1": "França",
         "city2": "Lisbonne",
@@ -122,15 +122,15 @@
         "status": "Estado",
         "boarding": "Embarque",
         "ambiance": "« Embarque do voo EB-26.09 com destino a Lisboa – Ericeira. Os passageiros são convidados a se dirigir ao portão de embarque 016. »",
-        "ceremony": "CERIMÔNIA",
-      "jardin": "JARDINS",
+        "ceremony": "Cerimónia",
+      "jardin": "Jardins",
         "cocktail": "Pátio",
         "terrasse": "Terraço",
         "diner": "Jantar",
         "grand-salon": "Salão Principal",
-        "cake-cutting": "CORTE DO BOLO",
-        "dance": "ABERTURA DO SALÃO",
-        "free-buffet": "BUFFET LIVRE"
+        "cake-cutting": "Corte do Bolo",
+        "dance": "Abertura do Salão",
+        "free-buffet": "Buffet Livre"
     },
 
     "Shelter": {
@@ -159,6 +159,10 @@
        "description3": "a rodovia A8 em direção a Mafra. Em seguida, continue na rodovia A21 em direção a Ericeira.",
        "title4": "O Local",
        "description4": "“Quinta do Roseiral” - Estrada de Sto Isidoro, 2655-000 Ericeira, Portugal"
+    },
+
+    "Footer": {
+      "footerMessage": "26 de Setembro de 2026 • Lisboa, Portugal"
     },
 
   "NotFoundPage": {
