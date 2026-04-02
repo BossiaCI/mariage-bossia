@@ -12,8 +12,12 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { useTranslations } from "next-intl"
 
 export function RSVPSection() {
+
+  const t = useTranslations('Rsvp');
+  
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
   const [isSubmitted, setIsSubmitted] = useState(false)
@@ -35,15 +39,15 @@ export function RSVPSection() {
           className="text-center mb-12"
         >
           <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
-            Confirmez votre présence
+            {t('title')}
           </p>
           <h2 className="font-serif text-4xl md:text-6xl text-foreground mb-6 text-balance">
             RSVP
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Nous vous remercions de confirmer votre présence avant le 1er août 2026.
+            {t('description')}
           </p>
-          <p><strong>Nombre d’accompagnants (Assurez-vous qu'ils ont bien été invités par les mariés.)</strong></p>
+          <p><strong>{t('warning')}</strong></p>
         </motion.div>
 
         <motion.div
@@ -61,29 +65,29 @@ export function RSVPSection() {
               <div className="w-20 h-20 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-6">
                 <Sparkles className="w-10 h-10 text-accent" />
               </div>
-              <h3 className="font-serif text-3xl text-foreground mb-4">Merci !</h3>
+              <h3 className="font-serif text-3xl text-foreground mb-4">{t('thankYou')}</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Votre réponse a bien été enregistrée.<br />
-                Nous avons hâte de vous retrouver !
+                {t('confirmation')}<br />
+               {t('seeYouSoon')}
               </p>
             </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-8">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <Label htmlFor="firstName">Prénom</Label>
+                  <Label htmlFor="firstName">{t('firstName')}</Label>
                   <Input
                     id="firstName"
-                    placeholder="Votre prénom"
+                    placeholder={t('placeholderFirstName')}
                     required
                     className="bg-background"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="lastName">Nom</Label>
+                  <Label htmlFor="lastName">{t('lastName')}</Label>
                   <Input
                     id="lastName"
-                    placeholder="Votre nom"
+                    placeholder={t('placeholderLastName')}
                     required
                     className="bg-background"
                   />
@@ -91,29 +95,29 @@ export function RSVPSection() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
+                <Label htmlFor="email">{t('email')}</Label>
                 <Input
                   id="email"
                   type="email"
-                  placeholder="votre@email.com"
+                  placeholder={t('placeholderEmail')}
                   required
                   className="bg-background"
                 />
               </div>
 
               <div className="space-y-4">
-                <Label>Serez-vous des nôtres ?</Label>
+                <Label>{t('attendance')}</Label>
                 <RadioGroup value={attendance} onValueChange={setAttendance} className="flex gap-6">
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="yes" id="yes" />
                     <Label htmlFor="yes" className="cursor-pointer font-normal">
-                      C'est avec plaisir que je serai présent(e) !
+                      {t('willAttend')}
                     </Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="no" id="no" />
                     <Label htmlFor="no" className="cursor-pointer font-normal">
-                      Malheureusement, je ne pourrai pas être présent(e).
+                      {t('wontAttend')}
                     </Label>
                   </div>
                 </RadioGroup>
@@ -126,7 +130,7 @@ export function RSVPSection() {
                   className="space-y-6"
                 >
                   <div className="space-y-2">
-                    <Label htmlFor="guests">Nombre d&apos;accompagnants (veillez à ce qu'ils soient bien invités par les mariés)</Label>
+                    <Label htmlFor="guests">{t('guests')}</Label>
                     <Input
                       id="guests"
                       type="number"
@@ -138,10 +142,10 @@ export function RSVPSection() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="dietary">Restrictions alimentaires</Label>
+                    <Label htmlFor="dietary">{t('dietary')}</Label>
                     <Input
                       id="dietary"
-                      placeholder="Végétarien, allergies, etc."
+                      placeholder={t('placeholderDietary')}
                       className="bg-background"
                     />
                   </div>
@@ -149,10 +153,10 @@ export function RSVPSection() {
               )}
 
               <div className="space-y-2">
-                <Label htmlFor="message">Un petit mot pour les mariés</Label>
+                <Label htmlFor="message">{t('message')}</Label>
                 <Textarea
                   id="message"
-                  placeholder="Partagez vos vœux, une anecdote, ou simplement votre enthousiasme..."
+                  placeholder={t('placeholderMessage')}
                   rows={4}
                   className="bg-background resize-none"
                 />
@@ -160,7 +164,7 @@ export function RSVPSection() {
 
               <Button type="submit" size="lg" className="w-full gap-2">
                 <Send className="w-4 h-4" />
-                Envoyer ma réponse
+                {t('submit')}
               </Button>
             </form>
           )}

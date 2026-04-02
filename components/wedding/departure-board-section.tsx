@@ -4,72 +4,9 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState, useEffect } from "react"
 import { Plane, Clock, CheckCircle2 } from "lucide-react"
+import { useTranslations } from "next-intl"
 
-const flights = [
-  {
-    flight: "EB-26.09",
-    destination: "Ericeira, Portugal",
-    gate: "QUINTA DO ROSEIRAL",
-    time: "15:30",
-    status: "ON TIME",
-    statusShort: "OK",
-    statusColor: "text-green-600",
-  },
-  {
-    flight: "EB-016",
-    destination: "CEREMONIE",
-    gate: "JARDINS",
-    time: "16:00",
-    status: "BOARDING",
-    statusShort: "EMB",
-    statusColor: "text-amber-600",
-  },
-  {
-    flight: "EB-017",
-    destination: "COCKTAIL",
-    gate: "TERRASSE",
-    time: "17:00",
-    status: "ON TIME",
-    statusShort: "OK",
-    statusColor: "text-green-600",
-  },
-  {
-    flight: "EB-019",
-    destination: "DINER",
-    gate: "GRAND SALON",
-    time: "19:30",
-    status: "ON TIME",
-    statusShort: "OK",
-    statusColor: "text-green-600",
-  },
-  {
-    flight: "EB-022",
-  destination: "COUPURE DU GATEAU",
-    gate: "JARDINS",
-    time: "22:00",
-    status: "DELAYED",
-    statusShort: "RETARD",
-    statusColor: "text-red-600",
-  },
-  {
-    flight: "EB-223",
-    destination: "OUVERTURE DU BAL",
-    gate: "GRAND SALON",
-    time: "22:30",
-    status: "DELAYED",
-    statusShort: "RETARD",
-    statusColor: "text-red-600",
-  },
-  {
-    flight: "EB-023",
-    destination: "BUFFET LIBRE",
-    gate: "GRAND SALON",
-    time: "23:00",
-    status: "ON TIME",
-    statusShort: "OK",
-    statusColor: "text-green-600",
-  },
-]
+
 
 function FlipChar({ char, delay }: { char: string; delay: number }) {
   const [displayChar, setDisplayChar] = useState(" ")
@@ -99,6 +36,76 @@ function FlipText({ text, baseDelay }: { text: string; baseDelay: number }) {
 }
 
 export function DepartureBoardSection() {
+
+  const t = useTranslations('Departure');
+
+
+  const flights = [
+  {
+    flight: "EB-26.09",
+    destination: "Ericeira, Portugal",
+    gate: "QUINTA DO ROSEIRAL",
+    time: "15:30",
+    status: "ON TIME",
+    statusShort: "OK",
+    statusColor: "text-green-600",
+  },
+  {
+    flight: "EB-016",
+    destination: t('ceremony'),
+    gate: t('jardin'),
+    time: "16:00",
+    status: "BOARDING",
+    statusShort: "EMB",
+    statusColor: "text-amber-600",
+  },
+  {
+    flight: "EB-017",
+    destination: t('cocktail'),
+    gate: t('terrasse'),
+    time: "17:00",
+    status: "ON TIME",
+    statusShort: "OK",
+    statusColor: "text-green-600",
+  },
+  {
+    flight: "EB-019",
+    destination: t('diner'),
+    gate: t('grand-salon'),
+    time: "19:30",
+    status: "ON TIME",
+    statusShort: "OK",
+    statusColor: "text-green-600",
+  },
+  {
+    flight: "EB-022",
+    destination: t('cake-cutting'),
+    gate: t('jardin'),
+    time: "22:00",
+    status: "DELAYED",
+    statusShort: "RETARD",
+    statusColor: "text-red-600",
+  },
+  {
+    flight: "EB-223",
+    destination: t('dance'),
+    gate: t('grand-salon'),
+    time: "22:30",
+    status: "DELAYED",
+    statusShort: "RETARD",
+    statusColor: "text-red-600",
+  },
+  {
+    flight: "EB-023",
+    destination: t('free-buffet'),
+    gate: t('grand-salon'),
+    time: "23:00",
+    status: "ON TIME",
+    statusShort: "OK",
+    statusColor: "text-green-600",
+  },
+]
+
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
   const [currentTime, setCurrentTime] = useState("")
@@ -124,10 +131,10 @@ export function DepartureBoardSection() {
           className="text-center mb-8 sm:mb-12"
         >
           <p className="text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase text-accent mb-3 sm:mb-4">
-            Aeroport International de Lisbonne
+            {t('subtitle')}
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-background mb-4 text-balance">
-            Tableau des Departs
+            {t('tableau')}
           </h2>
           <div className="flex items-center justify-center gap-2 text-accent">
             <Clock className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -145,21 +152,21 @@ export function DepartureBoardSection() {
           {/* Header - Desktop */}
           <div className="hidden sm:block bg-background/10 px-4 md:px-6 py-3 sm:py-4 border-b border-background/10">
             <div className="grid grid-cols-5 gap-2 md:gap-4 text-xs md:text-sm uppercase tracking-wider text-accent">
-              <span>Vol</span>
-              <span>Destination</span>
-              <span>Porte</span>
-              <span>Heure</span>
-              <span>Statut</span>
+              <span>{t('flight')}</span>
+              <span>{t('destination')}</span>
+              <span>{t('gate')}</span>
+              <span>{t('time')}</span>
+              <span>{t('status')}</span>
             </div>
           </div>
 
           {/* Header - Mobile */}
           <div className="sm:hidden bg-background/10 px-3 py-3 border-b border-background/10">
             <div className="grid grid-cols-4 gap-2 text-[10px] uppercase tracking-wider text-accent">
-              <span>Vol</span>
-              <span>Dest.</span>
-              <span>Heure</span>
-              <span className="text-right">Statut</span>
+              <span>{t('flight')}</span>
+              <span>{t('destination')}</span>
+              <span>{t('time')}</span>
+              <span className="text-right">{t('status')}</span>
             </div>
           </div>
 
@@ -178,17 +185,17 @@ export function DepartureBoardSection() {
                     <Plane className="w-4 h-4 text-accent hidden md:block" />
                     {isInView && <FlipText text={flight.flight} baseDelay={500 + index * 200} />}
                   </div>
-                  <div className="text-background font-serif text-sm md:text-base truncate">
+                  <div className="text-background font-serif text-sm md:text-base">
                     {flight.destination}
                   </div>
-                  <div className="text-background/80 font-mono text-sm truncate">
+                  <div className="text-background/80 font-mono text-sm">
                     {flight.gate}
                   </div>
                   <div className="text-background font-mono text-sm md:text-base">
                     {flight.time}
                   </div>
                   <div className={`flex items-center gap-1 text-xs md:text-sm font-medium ${flight.statusColor}`}>
-                    <CheckCircle2 className="w-3 h-3 md:w-4 md:h-4 flex-shrink-0" />
+                    <CheckCircle2 className="w-3 h-3 md:w-4 md:h-4 shrink-0" />
                     <span className="hidden lg:inline">{flight.status}</span>
                     <span className="lg:hidden">{flight.statusShort}</span>
                   </div>
@@ -211,7 +218,7 @@ export function DepartureBoardSection() {
                   <div className="text-background/90 font-mono text-xs">
                     {flight.flight}
                   </div>
-                  <div className="text-background font-serif text-xs truncate">
+                  <div className="text-background font-serif text-xs">
                     {flight.destination}
                   </div>
                   <div className="text-background font-mono text-xs">
@@ -233,7 +240,7 @@ export function DepartureBoardSection() {
           transition={{ duration: 0.8, delay: 1.5 }}
           className="text-center mt-6 sm:mt-8 text-background/60 text-xs sm:text-sm italic px-4"
         >
-          « Embarquement du vol EB-26.09 à destination de Lisbonne – Ericeira. Les passagers sont invités à rejoindre la porte d’embarquement 016. »
+          {t('ambiance')}
         </motion.p>
       </div>
     </section>

@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Heart, Instagram, Mail } from "lucide-react"
+import { Globe2, Heart, Instagram, Mail } from "lucide-react"
 
 export function Footer() {
   return (
@@ -20,14 +20,14 @@ export function Footer() {
 
           <div className="flex items-center justify-center gap-6 mb-12">
             <a
-              href="mailto:mariage@Edéniabossia.com"
+              href="https://bossia.fr"
               className="w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
-              aria-label="Email"
+              aria-label="Website"
             >
-              <Mail className="w-5 h-5" />
+              <Globe2 className="w-5 h-5" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/dr.edenialima/"
               className="w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               aria-label="Instagram"
             >
@@ -37,7 +37,7 @@ export function Footer() {
 
           <div className="pt-8 border-t border-primary-foreground/20">
             <p className="text-sm opacity-60 flex items-center justify-center gap-2">
-              Fait avec <Heart className="w-4 h-4 fill-current" /> pour notre plus beau jour
+              Made with <Heart className="w-4 h-4 fill-current" /> for our most beautiful day.
             </p>
           </div>
         </motion.div>

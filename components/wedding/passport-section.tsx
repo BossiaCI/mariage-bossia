@@ -4,15 +4,21 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Stamp } from "lucide-react"
+import { useTranslations } from "next-intl"
 
-const stamps = [
-  { city: "Paris", country: "France", date: "2026", emoji: "FR" },
-  { city: "Portugal", country: "Lisbonne", date: "2026", emoji: "PT" },
-  { city: "Angola", country: "Luanda", date: "2026", emoji: "AG" },
-  { city: "Côte d’Ivoire", country: "Abidjan", date: "2026", emoji: "CI" },
-]
 
 export function PassportSection() {
+
+  const t = useTranslations('Passport');
+
+  const stamps = [
+    { city: t('city1'), country: t('country1'), date: "2026", emoji: "FR" },
+    { city: t('city2'), country: t('country2'), date: "2026", emoji: "PT" },
+    { city: t('city3'), country: t('country3'), date: "2026", emoji: "AO" },
+    { city: t('city4'), country: t('country4'), date: "2026", emoji: "CI" },
+  ]
+
+
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
@@ -27,7 +33,7 @@ export function PassportSection() {
           className="text-center mb-10 sm:mb-16"
         >
           <p className="text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase text-muted-foreground mb-3 sm:mb-4">
-            Participez à notre aventure
+            {t('title')}
           </p>
           {/* <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-4 sm:mb-6 text-balance">
             Notre Passeport
@@ -49,7 +55,7 @@ export function PassportSection() {
                 <div className="inline-block border-2 border-accent/60 rounded-full p-3 sm:p-4 mb-3 sm:mb-4">
                   <Stamp className="w-7 h-7 sm:w-10 sm:h-10 text-accent" />
                 </div>
-                <p className="text-accent text-[10px] sm:text-xs tracking-[0.3em] sm:tracking-[0.4em] uppercase mb-1 sm:mb-2">Passeport de Voyage</p>
+                <p className="text-accent text-[10px] sm:text-xs tracking-[0.3em] sm:tracking-[0.4em] uppercase mb-1 sm:mb-2">{t('subtitle')}</p>
                 <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-primary-foreground">
                   Edénia & Bossia
                 </h3>
@@ -82,21 +88,21 @@ export function PassportSection() {
                 <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-border">
                   <div className="grid grid-cols-2 gap-3 sm:gap-4 text-xs sm:text-sm">
                     <div>
-                      <p className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider mb-0.5 sm:mb-1">Titulaires</p>
+                      <p className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider mb-0.5 sm:mb-1">{t('holders')}</p>
                       <p className="font-serif text-foreground text-sm sm:text-base">Edénia & Bossia</p>
                     </div>
                     <div>
-                      <p className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider mb-0.5 sm:mb-1">Destination</p>
+                      <p className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider mb-0.5 sm:mb-1">{t('destination')}</p>
                       <p className="font-serif text-foreground text-sm sm:text-base">Quinta do Roseiral - Ericeira, Portugal</p>
                       <p className="font-serif text-foreground text-sm sm:text-base">Estrada de Santo Isidoro, 2655-000</p>
                     </div>
                     <div>
-                      <p className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider mb-0.5 sm:mb-1">Date d'Emission</p>
-                      <p className="font-serif text-foreground text-sm sm:text-base">26 Septembre 2026</p>
+                      <p className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider mb-0.5 sm:mb-1">{t('issue_date')}</p>
+                      <p className="font-serif text-foreground text-sm sm:text-base">{t('issue_date_value')}</p>
                     </div>
                     <div>
-                      <p className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider mb-0.5 sm:mb-1">Validite</p>
-                      <p className="font-serif text-foreground text-sm sm:text-base">de 15:30 à l’heure voulu par Dieu</p>
+                      <p className="text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider mb-0.5 sm:mb-1">{t('validity')}</p>
+                      <p className="font-serif text-foreground text-sm sm:text-base">{t('validity_value')}</p>
                     </div>
                   </div>
                 </div>

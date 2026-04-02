@@ -5,35 +5,41 @@ import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Plane, Hotel, Car, MapPin, QrCode, Barcode } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
+import { useTranslations } from "next-intl"
 
-const travelInfo = [
+
+
+export function TravelSection() {
+  const t = useTranslations('Travel');
+
+
+  const travelInfo = [
   {
     icon: Plane,
-    title: "Par Avion",
-    description: "Aeroporto Humberto Delgado de Lisboa, à 43km du lieu de réception.",
+    title: t('title1'),
+    description: t('description1'),
     details: "",
   },
   {
     icon: Hotel,
-    title: "Hebergement",
-    description: "Pour voir nos hébergements favoris près du lieu de réception, voir prochaine section.",
+    title: t('title2'),
+    description: t('description2'),
     details: "",
   },
   {
     icon: Car,
-    title: "Par Voiture (Taxi, Uber)",
-    description: "Prendre l’autoroute A8 en direction de Mafra. Puis continuer sur la route A21 en direction d’Ericeira.",
+    title: t('title3'),
+    description: t('description3'),
     details: "",
   },
   {
     icon: MapPin,
-    title: "Le Lieu",
-    description: "“Quinta do Roseiral” - Estrada de Sto Isidoro, 2655-000 Ericeira, Portugal",
+    title: t('title4'),
+    description: t('description4'),
     details: "",
   },
 ]
 
-export function TravelSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
@@ -48,13 +54,13 @@ export function TravelSection() {
           className="text-center mb-10 sm:mb-16"
         >
           <p className="text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] uppercase text-muted-foreground mb-3 sm:mb-4">
-            Informations Pratiques
+            {t('intro')}
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-4 sm:mb-6 text-balance">
-            Votre Billet d'Avion
+            {t('title')}
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-            Tout ce que vous devez savoir pour nous rejoindre en Ericeira
+            {t('description')}
           </p>
         </motion.div>
 

@@ -1,0 +1,177 @@
+{
+  "Error": {
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+    "title": "Something went wrong!"
+  },
+  "IndexPage": {
+    "description": "Rejoignez-nous pour célébrer notre union - Un voyage féerique vers notre amour éternel.",
+    "title": "Edénia & Bossia - Notre Mariage"
+  },
+  "LocaleLayout": {
+    "title": "Edénia & Bossia - Notre Mariage"
+  },
+  "LocaleSwitcher": {
+    "label": "Changer la langue",
+    "locale": "{locale, select, fr {Français} pt {Portugais} other {Inconnu}}"
+  },
+  "Manifest": {
+    "name": "Edénia & Bossia - Notre Mariage"
+  },
+  "Navigation": {
+    "home": "Acceuil",
+    "pathnames": "Pathnames",
+    "story": "Notre Histoire",
+    "travel": "Voyage",
+    "schedule": "Programme",
+    "rsvp": "RSVP"
+  },
+  "Hero": {
+    "and": "ET",
+    "description": "ont l’honneur de vous annoncer l'union de leurs enfants",
+    "site_description": "Qui se marieront à Ericeira, Lisbonne - Portugal le:",
+    "description_date": "26 Septembre 2026",
+    "scroll_indicator": "Plus de détails",
+    "memory": "En mémoire"
+  },
+  "Checkin": {
+   "zone": "Zone d'Enregistrement",
+    "confirmation": "Confirmation de présence au Mariage",
+    "description": "Veuillez effectuer votre « check-in » au plus tard un mois avant l'événement.",
+    "confirmation_ouverte": "Check-in Ouvert",
+    "rappel": "N’oubliez pas votre plus beau sourire et votre envie de faire la fête avec nous",
+    "flight": "Vol",
+    "step1": "Classe VIP",
+    "step2": "Interdits en Cabine",
+    "step3": "Bagages",
+    "title_step1": "Votre Invitation",
+    "description_step1": "Merci de confirmer votre présence en ligne avant le 26 août 2026. Chaque invitation est précieuse pour nous ; gardez-la précieusement.",
+    "title_step2": "Accès Réservé",
+    "description_step2": "Accès réservé exclusivement aux invités figurant sur la liste e munis de leur invitation virtuelle.",
+    "title_step3": "Preparez vos Bagages",
+    "description_step3": "Tenue de gala. Merci d'ÉVITER les vêtements blancs !"
+  },
+
+  "Rsvp": {
+    "title": "Confirmez votre présence",
+    "description": "Nous vous remercions de confirmer votre présence avant le 1er août 2026.",
+    "warning": "Nombre d’accompagnants (Assurez-vous qu'ils ont bien été invités par les mariés.)",
+    "firstName": "Prénom",
+    "placeholderFirstName": "Votre prénom",
+    "lastName": "Nom",
+    "placeholderLastName": "Votre nom",
+    "email": "Votre adresse e-mail",
+    "placeholderEmail": "Votre adresse e-mail",
+    "thankYou": "Merci !",
+    "confirmation": "Votre réponse a bien été enregistrée.",
+    "seeYouSoon": "Nous avons hâte de vous retrouver !",
+    "message": "Message pour les mariés (optionnel)",
+    "placeholderMessage": "Partagez vos vœux, une anecdote, ou simplement votre enthousiasme...",
+    "attendance": "Votre présence",
+    "willAttend": "C'est avec plaisir que je serai présent(e) !",
+    "wontAttend": "Malheureusement, je ne pourrai pas être présent(e).",
+    "guests": "Nombre d'accompagnants (veillez à ce qu'ils soient bien invités par les mariés)",
+    "dietary": "Restrictions alimentaires",
+    "placeholderDietary": "Végétarien, allergies, etc.",
+    "submit": "Envoyer ma réponse"
+  },
+  "Story": {
+    "title": "Notre Histoire",
+    "subtitle": "La Rencontre",
+    "description": "Deux cœurs voyageurs qui se sont trouvés",
+    "year1": "4 Juin 2023",
+    "title1": "La Rencontre",
+    "location1": "Ile-de-France, France",
+    "description1": "Bossia à proposé à Edénia de se retrouver au Parc de Sceaux, pour enfin se découvrir en vrai, après un mois d’échanges sur WhatsApp. Il arrive avec 1 heure et demie de retard, ayant perdu son train…",
+    "description12": "Mais malgré cela, après qu’ Edénia s’est cachée entre les arbres pendant que Bossia la cherchait, leurs regards se sont croisés finalement… et ce qui n’était encore que de simples conversations est devenu, pour eux deux, une évidence.",
+    "year2": "12 Juin 2023",
+    "title2": "Officiellement en couple",
+    "location2": "Lille, France",
+    "description2": "Bossia invite Edénia à passer le week-end à Lille, où ils profitent d’un pique-nique au parc de la Citadelle et visitent le Zoo. Le 12 juin, avant le retour d’ Edénia à Paris, Bossia",
+    "description22": "demande, en avance sur son anniversaire, le plus beau des cadeaux: devenir officiellement copains.",
+    "year3": "10 août2024",
+    "title3": "Naissance d'Enola",
+    "location3": "Paris 14ème, France",
+    "description3": "L’été suivant, ils s’installent ensemble près du cœur de Paris. Quelques mois après, naît Enola, et avec elle surgit naturellement le désir de sceller leur amour par le mariage.",
+    "description32": ""
+  },
+  "Passport": {
+    "title": "Participez à notre aventure",
+    "subtitle": "Passeport de Voyage",
+    "holders": "Titulaires",
+    "destination": "Destination",
+    "issue_date": "Date d'Emission",
+    "validity": "Validité",
+    "issue_date_value": "26 Septembre 2026",
+    "validity_value": "de 15:30 à l’heure voulu par Dieu",
+    "city1": "Paris",
+    "country1": "France",
+    "city2": "Lisbonne",
+    "country2": "Portugal",
+    "city3": "Luanda",
+    "country3": "Angola",
+    "city4": "Abidjan",
+    "country4": "Côte d’Ivoire"
+  },
+
+  "Departure": {
+    "subtitle": "Aéroport International de Lisbonne",
+    "tableau": "Tableau des Départs",
+    "flight": "Vol",
+    "destination": "Destination",
+    "time": "Heure",
+    "status": "Statut",
+    "gate": "Porte",
+    "boarding": "Embarquement",
+    "departed": "Parti",
+    "ambiance": "« Embarquement du vol EB-26.09 à destination de Lisbonne – Ericeira. Les passagers sont invités à rejoindre la porte d’embarquement 016. »",
+    "ceremony": "CERÉMONIE",
+    "jardin": "JARDINS",
+    "cocktail": "COCKTAIL",
+    "terrasse": "TERRASSE",
+    "diner": "DÎNER",
+    "grand-salon": "GRAND SALON",
+    "cake-cutting": "COUPE DU GÂTEAU",
+    "gardens": "Jardins",
+    "dance": "OUVERTURE DU SALON",
+    "free-buffet": "BUFFET LIBRE"
+  },
+
+
+  "Shelter": {
+    "title": "Hébergement",
+    "distance": "distance",
+    "visit": "Visiter le site de l'hôtel",
+    "temps1": "2 minutes du lieu en voiture",
+    "temps2": "8 minutes du lieu en voiture",
+    "temps4": "9 minutes du lieu en voiture",
+    "temps5": "10 minutes du lieu en voiture",
+    "temps6": "14 minutes du lieu en voiture",
+    "donationInfo": "Pour ceux qui nous demandent comment nous faire plaisir : sachez que votre présence est notre priorité. Mais si vous avez envie de nous donner un petit coup de pouce pour nos aventures de jeunes mariés, vous pouvez retrouver notre liste de souhaits ou contribuer directement via les coordonnées ci-dessous :",
+    "owner": "Titulaire",
+    "thanks": "Nous seront eternement reconnaissants !"
+  },
+  
+  "Travel": {
+    "intro": "Informations Pratiques",
+    "title": "Votre Billet d'Avion",
+    "description": "Tout ce que vous devez savoir pour nous rejoindre en Ericeira",
+    "title1": "Par Avion",
+    "description1": "Aeroporto Humberto Delgado de Lisboa, à 43km du lieu de réception.",
+    "title2": "Par Train",
+    "description2": "Gare de Lisbonne - Oriente, à 45km du lieu de réception.",
+    "title3": "En Voiture (Taxi, Uber)",
+    "description3": "Prendre l’autoroute A8 en direction de Mafra. Puis continuer sur la route A21 en direction d’Ericeira.",
+    "title4": "Le Lieu",
+    "description4": "“Quinta do Roseiral” - Estrada de Sto Isidoro, 2655-000 Ericeira, Portugal"
+  },
+
+
+  "NotFoundPage": {
+    "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
+    "title": "Page introuvable"
+  },
+  "PathnamesPage": {
+    "description": "<p>The pathnames are internationalized too.</p><p>If you're using the default language English, you'll see <code>/en/pathnames</code> in the browser address bar on this page.</p><p>If you change the locale to German, the URL is localized accordingly (<code>/de/pfadnamen</code>).</p>",
+    "title": "Pathnames"
+  }
+}

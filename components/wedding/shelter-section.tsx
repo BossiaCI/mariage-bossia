@@ -3,67 +3,73 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { UserCheck, Luggage, Ticket, ArrowRight, ArrowDown, Sparkles, StarIcon } from "lucide-react"
+import { UserCheck, Luggage, Ticket, ArrowRight, ArrowDown, Sparkles, StarIcon, Hotel } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
+import { useTranslations } from "next-intl"
 
-const shelterSteps = [
+
+
+export function ShelterSection() {
+
+  const t = useTranslations('Shelter');
+
+  const shelterSteps = [
   {
     step: 1.1,
-    icon: StarIcon,
+    icon: Hotel,
     siteweb: "https://www.marpuro.pt/pt",
     title: "Mar Puro Hotel",
     rue: "Rua Alto da Cabrita 2640-054",
     province: "Santo Isidoro - Mafra - Portugal",
-    temps: "2 minutes du lieu en voiture",
+    temps: t('temps1'),
   },
   {
     step: 5.5,
-    icon: StarIcon,
+    icon: Hotel,
     siteweb: "https://immerso.pt/fr/chambres/ ",
     title: "Immerso Hotel",
     rue: "Rua Bica da Figueira",
     province: "Santo Isisdoro - Portugal",
-    temps: "8 minutes du lieu en voiture",
+    temps: t('temps2'),
   },
   {
     step: 6.1,
-    icon: StarIcon,
+    icon: Hotel,
     siteweb: "https://selina.pt/villa/selina-ericeira",
     title: "Selina Boavista Ericeira",
     rue: "Estrada de Mafra, 2655-302",
     province: "Ericeira - Portugal",
-    temps: "8 minutes du lieu en voiture",
+    temps: t('temps2'),
   },
   {
     step: 5,
-    icon: StarIcon,
+    icon: Hotel,
     siteweb: "https://www.quintadarelva.com/",
     title: "Quinta da Relva - Soulfull House",
     rue: "Rua Chãos da Relva",
     province: "Mafra - Portugal",
-    temps: "9 minutes du lieu en voiture",
+    temps: t('temps4'),
   },
   {
     step: 6.9,
-    icon: StarIcon,
+    icon: Hotel,
     siteweb: "https://www.vilagale.com/fr/hotels/cote-de-lisbonne/vila-gale-ericeira",
     title: "Vila Galé Ericeira",
     rue: "Largo dos Navegantes 2655-320",
     province: "Ericeira - Portugal",
-    temps: "10 minutes du lieu en voiture",
+    temps: t('temps5'),
   },
   {
     step: 10,
-    icon: StarIcon,
+    icon: Hotel,
     siteweb: "https://www.aethos.com/destinations/ericeira?p=base&c=property-select&lg=fr-FR",
     title: "Aethos Ericeira",
     rue: "Rua da Estalagem",
     province: "Encarnaçao - Portugal",
-    temps: "14 minutes du lieu en voiture",
+    temps: t('temps6'),
   },
 ]
 
-export function ShelterSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
@@ -79,7 +85,7 @@ export function ShelterSection() {
         >
           <div className="inline-flex items-center gap-2 bg-accent/20 rounded-full px-3 sm:px-4 py-1.5 sm:py-2 mb-4 sm:mb-6">
             <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-accent" />
-            <span className="text-xs sm:text-sm tracking-wider uppercase text-accent">Hebergements</span>
+            <span className="text-xs sm:text-sm tracking-wider uppercase text-accent">{t('title')}</span>
           </div>
         </motion.div>
 
@@ -103,7 +109,7 @@ export function ShelterSection() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <span className="inline-block bg-primary/10 text-primary text-[10px] sm:text-xs font-medium px-1.5 sm:px-2 py-0.5 sm:py-1 rounded mb-1.5 sm:mb-2">
-                        distance {step.step} km
+                        {t('distance')} {step.step} km
                       </span>
                       <h3 className="font-serif text-lg sm:text-xl text-foreground mb-1 sm:mb-2">{step.title}</h3>
                       <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">{step.rue}</p>
@@ -115,7 +121,7 @@ export function ShelterSection() {
                         rel="noopener noreferrer"
                         className="inline-block mt-2 text-sm text-accent hover:underline"
                       >
-                        Voir le site
+                        {t('visit')} <ArrowRight className="w-4 h-4 inline-block" />
                       </a>
                     </div>
                   </div>
@@ -125,6 +131,27 @@ export function ShelterSection() {
           ))}
         </div>
       </div>
+
+      <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={isInView ? { opacity: 1, scale: 1 } : {}}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mt-10 mb-10 sm:mb-16"
+        >
+          <div className="bg-primary rounded-xl p-4 sm:p-6 md:p-8 max-w-2xl mx-auto">
+
+            <div className="bg-background/10 rounded-lg p-4 sm:p-6 text-center">
+              <p className="text-primary-foreground/80 text-sm sm:text-base">{t('donationInfo')}</p>
+              <p  className="text-primary-foreground/80 text-sm sm:text-base"><strong>IBAN :</strong> FR76 3000 3034 8000 0506 4263 04</p>
+              <p className="text-primary-foreground/80 text-sm sm:text-base"><strong>SWIFT / BIC:</strong> SOGEFRPP</p>
+              <p className="text-primary-foreground/80 text-sm sm:text-base"><strong>{t('owner')}:</strong> Mr Daha Ou Garnacho Da Cruz Lima</p><br />
+              <p className="text-primary-foreground/80 text-sm sm:text-base"><strong>{t('thanks')}</strong></p>
+            </div>
+            
+          </div>
+        </motion.div>
+      
     </section>
+
   )
 }

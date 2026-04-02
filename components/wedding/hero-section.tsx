@@ -2,8 +2,12 @@
 
 import { motion } from "framer-motion"
 import { Plane } from "lucide-react"
+import { useTranslations } from "next-intl";
 
 export function HeroSection() {
+
+  const t = useTranslations('Hero');
+  
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-background">
       {/* Decorative elements */}
@@ -62,7 +66,7 @@ export function HeroSection() {
               </motion.p>
             </div>
             <div className="col-span-1 flex items-center justify-center">
-              <span className="font-serif text-2xl md:text-3xl text-accent italic">ET</span>
+              <span className="font-serif text-2xl md:text-3xl text-accent italic">{t('and')}</span>
             </div>
             <div className="">
                 <motion.p
@@ -71,7 +75,7 @@ export function HeroSection() {
                 transition={{ duration: 0.8 }}
                 className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4"
                 >
-                Feu Adjorlolo Grâce
+                Adjorlolo Grâce  <br />{t('memory')}
               </motion.p>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -99,7 +103,7 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
           className="text-sm tracking-[0.3em] text-muted-foreground mb-6"
         >
-          ont l’honneur de vous annoncer l'union de leurs enfants
+          {t('description')}
         </motion.p>
 
         <div className="grid grid-cols-3 gap-3 p-4 sm:gap-4 md:gap-5 mb-8 sm:mb-12">
@@ -145,10 +149,10 @@ export function HeroSection() {
           className="space-y-4"
         >
           <p className="text-lg md:text-xl text-muted-foreground font-light tracking-wide">
-            Qui se marieront à Ericeira, Portugal le:
+            {t('site_description')}
           </p>
           <p className="font-serif text-3xl md:text-4xl text-primary font-medium">
-            26 Septembre 2026
+            {t('description_date')} <br />
           </p>
         </motion.div>
       </div>
@@ -165,7 +169,7 @@ export function HeroSection() {
           transition={{ duration: 2, repeat: Infinity }}
           className="flex flex-col items-center gap-2 text-muted-foreground"
         >
-          <span className="text-xs tracking-widest uppercase">Plus de détails</span>
+          <span className="text-xs tracking-widest uppercase">{t('scroll_indicator')}</span>
           <div className="w-px h-8 bg-muted-foreground/50" />
         </motion.div>
       </motion.div>

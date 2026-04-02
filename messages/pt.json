@@ -1,0 +1,186 @@
+{
+  "Error": {
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+    "title": "Something went wrong!"
+  },
+  "IndexPage": {
+    "description": "This is a basic example that demonstrates the usage of <code>next-intl</code> with the Next.js App Router. Try changing the locale in the top right corner and see how the content changes.",
+    "title": "Edénia & Bossia - nosso casamento"
+  },
+  "LocaleLayout": {
+    "title": "Edénia & Bossia - nosso casamento"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, pt {Português} fr {Francês} other {Desconhecido}}"
+  },
+  "Manifest": {
+    "name": "Edénia & Bossia - nosso casamento"
+  },
+  "Navigation": {
+    "home": "Inicio",
+    "pathnames": "nomes-de-caminho",
+    "story": "Tripulação",
+    "travel": "Viagem",
+    "schedule": "Programação",
+    "rsvp": "Check-in"
+  },
+  "Hero": {
+    "and": "E",
+    "description": "têm o prazer de anunciar a união dos seus filhos",
+    "site_description": "que celebrarão o seu matrimónio em Ericeira, Lisboa -Portugal, no dia:",
+    "description_date": "26 de Setembro de 2026",
+    "scroll_indicator": "Mais detalhes",
+    "memory": "(Em memória)"
+  },
+  "Checkin": {
+   "zone": "ZONA DE REGISTO",
+    "confirmation": "Confirmação de presença ao casamento.",
+    "description": "Por favor, faça o seu “check-in” até um mês antes do evento.",
+    "confirmation_ouverte": "Check-in aberto",
+    "flight":"Voo",
+    "rappel": "E não se esqueçam do vosso melhor sorriso e da vossa vontade de celebrar connosco. ",
+    "step1": "Classe VIP",
+    "step2": "PROIBIDO NA CABINE",
+    "step3": "BAGAGEM",
+    "title_step1": "O Seu Convite",
+    "description_step1": "Por favor, confirme a sua presença online até dia 26 de agosto de 2026. Cada convite é importante para nós; guarde-o com carinho.",
+    "title_step2": "Acesso Reservado",
+    "description_step2": "Acesso reservado aos convidados que constam na lista e que possuam o convite virtual.",
+    "title_step3": "Prepare a sua Bagagem",
+    "description_step3": "Traje de gala. Por favor, EVITE ROUPAS DE COR BRANCA!"
+  },
+    "Rsvp": {
+        "title": "Confirme a sua presença",
+        "description": "Agradecemos que nos confirme a sua presença até dia 1 de agosto de 2026",
+        "warning": "Número de acompanhantes (certifique-se que foram convidados pelos noivos)",
+        "firstName": "Nome próprio",
+        "placeholderFirstName": "Primeiro nome",
+        "lastName": "Apelido",
+        "placeholderLastName": "Nome de família",
+        "email": "Seu endereço de e-mail",
+        "placeholderEmail": "Seu endereço de e-mail",
+        "thankYou": "Obrigado!",
+        "confirmation": "Sua resposta foi registrada com sucesso.",
+        "seeYouSoon": "Estamos ansiosos para vê-lo em breve!",
+        "attendance": "Você vai comparecer?",
+        "willAttend": "Com prazer, estarei presente!",
+        "wontAttend": "Infelizmente, não poderei comparecer.",
+        "guests": "Número de acompanhantes (certifique-se que foram convidados pelos noivos)",
+        "dietary": "Restrições alimentares",
+        "placeholderDietary": "Vegetariano, alergias, etc.",
+        "message": "Mensagem para os noivos (opcional)",
+        "placeholderMessage": "Compartilhe seus votos, uma anedota ou simplesmente o seu entusiasmo...",
+        "submit": "Confirmar a resposta"
+    },
+    "Story": {
+        "title": "A Nossa História",
+        "subtitle": "O Encontro",
+        "description": "Dois corações viajantes que se encontraram",
+        "year1": "4 de Junho de 2023",
+        "title1": "O primeiro encontro",
+        "location1": "Ile-de-France, França",
+        "description1": "Bossia propôs a Edénia encontrar-se com ele no Parque de Sceaux, para finalmente se conhecerem em pessoa, após um mês de conversas no WhatsApp. Ele chega com uma hora e meia de atraso, tendo perdido o trem…",
+        "description12": "Mas apesar disso, depois que Edénia se escondeu entre as árvores enquanto Bossia a procurava, seus olhares se cruzaram finalmente… e o que ainda era apenas conversas tornou-se, para eles dois, uma evidência.",
+        "year2":"12 de Junho de 2023",
+        "title2":"Oficialmente namorados",
+        "location2":"Lille, França",
+        "description2":"Bossia convida Edénia a passar o fim de semana em Lille, onde eles aproveitam um piquenique no parque da Cidadela e visitam o Zoológico. No dia 12 de junho, antes do retorno de Edénia a Paris, Bossia",
+        "description22":"pede a Edénia para ser sua namorada, e ela aceita com um sorriso.",
+        "year3": "10 de Agosto de 2024",
+        "title3": "O Nascimento da Enola",
+        "location3": "Paris 14ème, França",
+        "description3": "O verão seguinte, eles se instalam juntos perto do coração de Paris. Alguns meses depois, nasce Enola, e com ela surge naturalmente o desejo de selar seu amor pelo casamento."
+    },
+
+    "Passport": {
+        "title": "Nosso Passaporte",
+        "subtitle": "Participe da nossa aventura",
+        "holders": "Titulares",
+        "destination": "Destino",
+        "issue_date": "Data de Emissão",
+        "validity": "Validade",
+        "issue_date_value": "26 de Setembro de 2026",
+        "validity_value": "das 15:30 até a hora que Deus quiser",
+        "city1": "Paris",
+        "country1": "França",
+        "city2": "Lisbonne",
+        "country2": "Portugal",
+        "city3": "Luanda",
+        "country3": "Angola",
+        "city4": "Abidjan",
+        "country4": "Costa do Marfim"
+    },
+
+    "Departure": {
+        "subtitle": "Aeroporto Internacional de Lisboa",
+        "tableau": "Painel de Partidas",
+        "flight": "Voo",
+        "destination": "Destino",
+        "gate": "Portão",
+        "time": "Hora",
+        "status": "Estado",
+        "boarding": "Embarque",
+        "ambiance": "« Embarque do voo EB-26.09 com destino a Lisboa – Ericeira. Os passageiros são convidados a se dirigir ao portão de embarque 016. »",
+        "ceremony": "CERIMÔNIA",
+      "jardin": "JARDINS",
+        "cocktail": "Pátio",
+        "terrasse": "Terraço",
+        "diner": "Jantar",
+        "grand-salon": "Salão Principal",
+        "cake-cutting": "CORTE DO BOLO",
+        "dance": "ABERTURA DO SALÃO",
+        "free-buffet": "BUFFET LIVRE"
+    },
+
+    "Shelter": {
+        "title": "Acomodações",
+        "visit": "Visitar o site",
+        "distance": "distância",
+        "temps1": "2 minutos do local de carro",
+        "temps2": "8 minutos do local de carro",
+        "temps4": "9 minutos do local de carro",
+        "temps5": "10 minutos do local de carro",
+        "temps6": "14 minutos do local de carro",
+        "donationInfo": "Para os convidados que manifestaram o desejo de nos oferecer uma lembrança: a vossa presença é, para nós, o maior presente! Contudo, caso pretendam contribuir para o início da nossa vida de casados, poderão consultar a nossa lista de casamento ou fazer uma transferência através dos dados bancários abaixo indicados:",
+        "owner": "Titular",
+        "thanks": "Seremos eternamente gratos!"
+    },
+
+    "Travel": {
+      "intro": "Informações Práticas",
+      "title": "O Seu Bilhete de Avião",
+      "description": "Tudo o que precisam saber para juntarem-se a nós em Ericeira",
+       "title1": "De Avião",
+       "description1": "Aeroporto Humberto Delgado de Lisboa, a 43km do local da cerimônia.",
+       "title2": "De Comboio",
+       "description2": "Estação de Comboios de Lisboa - Oriente, a 45km do local da cerimônia.",
+       "title3": "De Carro (Táxi, Uber)",
+       "description3": "a rodovia A8 em direção a Mafra. Em seguida, continue na rodovia A21 em direção a Ericeira.",
+       "title4": "O Local",
+       "description4": "“Quinta do Roseiral” - Estrada de Sto Isidoro, 2655-000 Ericeira, Portugal"
+    },
+
+  "NotFoundPage": {
+    "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
+    "title": "Page not found"
+  },
+  "PageLayout": {
+    "links": {
+      "docs": {
+        "description": "Learn more about next-intl in the official docs.",
+        "href": "https://next-intl.dev",
+        "title": "Docs"
+      },
+      "source": {
+        "description": "Browse the source code of this example on GitHub.",
+        "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router",
+        "title": "Source code"
+      }
+    }
+  },
+  "PathnamesPage": {
+    "description": "<p>The pathnames are internationalized too.</p><p>If you're using the default language English, you'll see <code>/en/pathnames</code> in the browser address bar on this page.</p><p>If you change the locale to German, the URL is localized accordingly (<code>/de/pfadnamen</code>).</p>",
+    "title": "Pathnames"
+  }
+}

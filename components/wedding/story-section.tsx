@@ -4,34 +4,39 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { MapPin, Heart, Sparkles } from "lucide-react"
+import { useTranslations } from "next-intl"
 
-const storyTimeline = [
+
+export function StorySection() {
+
+  const t = useTranslations('Story');
+
+  const storyTimeline = [
   {
-    year: "4 Juin 2023",
-    location: "Ile-de-France, France",
-    title: "La Rencontre",
-    description: "Bossia à proposé à Edénia de se retrouver au Parc de Sceaux, pour enfin se découvrir en vrai, après un mois d’échanges sur WhatsApp. Il arrive avec 1 heure et demie de retard, ayant perdu son train…",
-    description2:"Mais malgré cela, après qu’ Edénia s’est cachée entre les arbres pendant que Bossia la cherchait, leurs regards se sont croisés finalement… et ce qui n’était encore que de simples conversations est devenu, pour eux deux, une évidence.",
+    year: t('year1'),
+    location: t('location1'),
+    title: t('title1'),
+    description: t('description1'),
+    description2: t('description12'),
     icon: MapPin,
   },
   {
-    year: "12 Juin 2023",
-    location: "Lille, France",
-    title: "Officiellement en couple",
-    description: "Bossia invite Edénia à passer le week-end à Lille, où ils profitent d’un pique-nique au parc de la Citadelle et visitent le Zoo. Le 12 juin, avant le retour d’ Edénia à Paris, Bossia",
-    description2: "demande, en avance sur son anniversaire, le plus beau des cadeaux: devenir officiellement copains.",
-    icon: Sparkles,
-  },
-  {
-    year: "10 août2024",
-    location: "Paris 14ème, France",
-    title: "Naissance d'Enola",
-    description: "L’été suivant, ils s’installent ensemble près du cœur de Paris. Quelques mois après, naît Enola, et avec elle surgit naturellement le désir de sceller leur amour par le mariage.",
+    year: t('year2'),
+    location: t('location2'),
+    title: t('title2'),
+    description: t('description2'),
+    description2: t('description22'),
     icon: Heart,
   },
+  {
+    year: t('year3'),
+    location: t('location3'),
+    title: t('title3'),
+    description: t('description3'),
+    icon: Sparkles,
+  },
 ]
-
-export function StorySection() {
+  
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
@@ -46,13 +51,13 @@ export function StorySection() {
           className="text-center mb-16"
         >
           <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-4">
-            la Rencontre
+            {t('title')}
           </p>
           <h2 className="font-serif text-4xl md:text-6xl text-foreground mb-6 text-balance">
-            Au Parc des Sceaux
+            {t('subtitle')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Deux cœurs voyageurs qui se sont trouvés
+            {t('description')}
           </p>
         </motion.div>
 

@@ -21,8 +21,8 @@ export default function WeddingPage() {
       <RSVPSection />
       <StorySection />
       <PassportSection />
-      <ParachuteSection />
-      <DroneGallery />
+      {/* <ParachuteSection /> */}
+      {/* <DroneGallery /> */}
       <DepartureBoardSection />
       <TravelSection />
       {/* <ScheduleSection /> */}

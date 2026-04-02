@@ -4,18 +4,24 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import LocaleSwitcher from "./LocaleSwitcher"
+import { useTranslations } from "next-intl"
 
-const navItems = [
-  { label: "Accueil", href: "#accueil" },
-  { label: "Notre Histoire", href: "#histoire" },
-  { label: "Voyage", href: "#voyage" },
-  { label: "Programme", href: "#programme" },
-  { label: "RSVP", href: "#rsvp" },
-]
+
 
 export function Navigation() {
+  const t = useTranslations('Navigation');
+  
   const [isScrolled, setIsScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+
+  const navItems = [
+  { label: t('home'), href: "#accueil" },
+  { label: t('story'), href: "#histoire" },
+  { label: t('travel'), href: "#voyage" },
+  { label: t('schedule'), href: "#programme" },
+  { label: t('rsvp'), href: "#rsvp" },
+]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,6 +47,8 @@ export function Navigation() {
           <a href="#accueil" className="font-serif text-2xl text-primary">
             E & B
           </a>
+
+          <LocaleSwitcher />
 
           {/* Desktop navigation */}
           <div className="hidden md:flex items-center gap-8">
