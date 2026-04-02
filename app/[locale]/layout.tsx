@@ -28,7 +28,26 @@ export async function generateMetadata(
   });
 
   return {
-    title: t('title')
+    title: t('title'),
+    description: 'Rejoignez-nous pour célébrer notre union - Un voyage féerique vers notre amour éternel',
+    generator: 'Wedding Invitation Website',
+    icons: {
+    icon: [
+      {
+        url: '/icon.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icon.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/icon.png',
+        //type: 'image/svg+xml',
+      },
+    ],
+    apple: '/icon.png',
+  },
   };
 }
 
