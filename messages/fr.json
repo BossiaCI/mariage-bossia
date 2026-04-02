@@ -169,6 +169,12 @@
     "footerMessage": "26 Septembre 2026 • Lisbonne, Portugal"
   },
 
+  "Gallery": {
+    "title": "Galerie",
+    "description": "Notre famille et nos aventures",
+    "subtitle": "Des souvenirs suspendus dans le temps"
+  },
+
 
   "NotFoundPage": {
     "description": "Please double-check the browser address bar or use the navigation to go to a known page.",

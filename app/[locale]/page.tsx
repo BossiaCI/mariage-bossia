@@ -22,7 +22,7 @@ export default function WeddingPage() {
       <StorySection />
       <PassportSection />
       {/* <ParachuteSection /> */}
-      {/* <DroneGallery /> */}
+      <DroneGallery />
       <DepartureBoardSection />
       <TravelSection />
       {/* <ScheduleSection /> */}

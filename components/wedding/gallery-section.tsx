@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import { ImageWithFallback } from '@/components/wedding/ImageWithFallback';
 import { Heart, MapPin, Sparkles } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 interface Photo {
   id: number;
@@ -14,90 +15,14 @@ interface Photo {
 }
 
 const photos: Photo[] = [
-  {
-    id: 1,
-    url: 'https://images.unsplash.com/photo-1700062069869-0c59ff21fa3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB3ZWRkaW5nJTIwY2VyZW1vbnl8ZW58MXx8fHwxNzY4NjkyNjU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Luxury wedding ceremony',
-    location: 'Château de Versailles',
-    category: 'wedding'
-  },
-  {
-    id: 2,
-    url: 'https://images.unsplash.com/photo-1599462616558-2b75fd26a283?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwY291cGxlfGVufDF8fHx8MTc2ODY5MjY2MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Wedding couple',
-    location: 'Florence, Italy',
-    category: 'wedding'
-  },
-  {
-    id: 3,
-    url: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwcmluZ3N8ZW58MXx8fHwxNzY4NjM2NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Wedding rings',
-    location: 'Paris, France',
-    category: 'wedding'
-  },
-  {
-    id: 4,
-    url: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYW50b3JpbmklMjBncmVlY2V8ZW58MXx8fHwxNzY4NjE0Nzc0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Santorini',
-    location: 'Greece',
-    category: 'travel'
-  },
-  {
-    id: 5,
-    url: 'https://images.unsplash.com/photo-1431274172761-fca41d930114?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXJpcyUyMGVpZmZlbCUyMHRvd2VyfGVufDF8fHx8MTc2ODY2ODk5NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Eiffel Tower',
-    location: 'Paris, France',
-    category: 'travel'
-  },
-  {
-    id: 6,
-    url: 'https://images.unsplash.com/photo-1614505241347-7f4765c1035e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWxkaXZlcyUyMGx1eHVyeSUyMHJlc29ydHxlbnwxfHx8fDE3Njg2MzU0NzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Maldives resort',
-    location: 'Maldives',
-    category: 'travel'
-  },
-  {
-    id: 7,
-    url: 'https://images.unsplash.com/photo-1738260530641-f945fa20a6cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkdWJhaSUyMGx1eHVyeSUyMGhvdGVsfGVufDF8fHx8MTc2ODYzNTQ3Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Dubai luxury',
-    location: 'Dubai, UAE',
-    category: 'travel'
-  },
-  {
-    id: 8,
-    url: 'https://images.unsplash.com/photo-1688141306580-fb3d96b9ae57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpdGFsaWFuJTIwY29hc3QlMjBhbWFsZml8ZW58MXx8fHwxNzY4NjkyNjYyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Amalfi Coast',
-    location: 'Italy',
-    category: 'travel'
-  },
-  {
-    id: 9,
-    url: 'https://images.unsplash.com/photo-1704253411612-e4deb715dcd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYWxpJTIwdGVtcGxlfGVufDF8fHx8MTc2ODU4MTMyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Bali temple',
-    location: 'Bali, Indonesia',
-    category: 'travel'
-  },
-  {
-    id: 10,
-    url: 'https://images.unsplash.com/photo-1647905555465-0f9004fbdaed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGFtcGFnbmUlMjBjZWxlYnJhdGlvbnxlbnwxfHx8fDE3Njg2OTI2NjJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Champagne celebration',
-    location: 'Monaco',
-    category: 'wedding'
-  },
-  {
-    id: 11,
-    url: 'https://images.unsplash.com/photo-1731585926373-3bc511338cc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBkZXN0aW5hdGlvbiUyMHdlZGRpbmd8ZW58MXx8fHwxNzY4NjkyNjYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Destination wedding',
-    location: 'Bora Bora',
-    category: 'wedding'
-  },
-  {
-    id: 12,
-    url: 'https://images.unsplash.com/photo-1561410807-f3159a41b065?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb21hbnRpYyUyMHN1bnNldCUyMGJlYWNofGVufDF8fHx8MTc2ODY5MjY2M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    alt: 'Romantic sunset',
-    location: 'Seychelles',
-    category: 'wedding'
-  }
+  // {
+  //   id: 1,
+  //   url: 'https://images.unsplash.com/photo-1700062069869-0c59ff21fa3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB3ZWRkaW5nJTIwY2VyZW1vbnl8ZW58MXx8fHwxNzY4NjkyNjU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+  //   alt: 'Luxury wedding ceremony',
+  //   location: 'Château de Versailles',
+  //   category: 'wedding'
+  // },
+  
 ];
 
 // Grouper les photos par 3 pour chaque drone
@@ -244,6 +169,8 @@ const LuxuryDrone = () => (
 
 export function DroneGallery() {
 
+  const t = useTranslations('Gallery');
+
  const [dots, setDots] = useState<Dot[]>([])
 
   useEffect(() => {
@@ -291,14 +218,14 @@ export function DroneGallery() {
           <Sparkles className="w-12 h-12 text-amber-700 mx-auto" />
         </motion.div>
         <h1 className="text-5xl md:text-7xl mb-4 bg-gradient-to-r from-amber-900 via-amber-700 to-amber-800 bg-clip-text text-transparent">
-          Galerie
+          {t('title')}
         </h1>
         <p className="text-xl md:text-2xl text-amber-900 mb-2">
-          Notre famille et nos aventures
+          {t('description')}
         </p>
         <div className="flex items-center justify-center gap-2 text-amber-800">
           <Heart className="w-5 h-5 fill-current" />
-          <span className="text-sm italic">Des souvenirs suspendus dans le temps</span>
+          <span className="text-sm italic">{t('subtitle')}</span>
           <Heart className="w-5 h-5 fill-current" />
         </div>
       </motion.div>
