@@ -23,5 +23,6 @@ model Confirmation {
   guests    Int?      @default(0)
   accompanyingGuests String?
   checkedIn  Boolean  @default(false)
+  checkinAt          DateTime?
   createdAt DateTime @default(now())
   } 

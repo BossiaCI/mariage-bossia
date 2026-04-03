@@ -112,7 +112,7 @@ export function HeroSection() {
           {t('description')}
         </motion.p>
 
-        <div className="grid grid-cols-3 gap-3 p-4 sm:gap-4 md:gap-5 mb-8 sm:mb-12">
+        <div className="grid grid-cols-3 gap-3 p-4 sm:gap-4 md:gap-5 mb-8 ml-3 mr-3 text-xs sm:text-sm">
             <div className="col-span-1 flex items-center justify-center">
                  <motion.h1
                   initial={{ opacity: 0, y: 30 }}
@@ -152,16 +152,18 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="space-y-4"
+          className="space-y-4 sm:space-y-6 md:space-y-8 mb-12"
         >
           <p className="text-lg md:text-xl text-muted-foreground font-light tracking-wide">
             {t('site_description')}
           </p>
-          <p className="font-serif text-3xl md:text-4xl text-primary font-medium">
+          <p className="font-serif text-3xl md:text-4xl text-primary font-medium sm:space-y-6 md:space-y-8 mb-12">
             {t('description_date')} <br />
           </p>
         </motion.div>
       </div>
+
+      <br /><br/>
 
       {/* Scroll indicator */}
       <motion.div
