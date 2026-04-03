@@ -33,9 +33,38 @@ export default function RSVPTable({ data, totalPages }: any) {
         />
 
         <div className="flex gap-2">
-          <button onClick={() => setFilter('all')}>All</button>
-          <button onClick={() => setFilter('yes')}>Attending</button>
-          <button onClick={() => setFilter('no')}>Declined</button>
+            <button
+              onClick={() => setFilter('all')}
+              className={`px-4 py-2 rounded-lg border transition-colors ${
+                filter === 'all'
+                  ? 'bg-accent text-white border-accent'
+                  : 'bg-gray-100 text-gray-700 border-gray-300 hover:bg-gray-200'
+              }`}
+            >
+              All
+            </button>
+
+            <button
+              onClick={() => setFilter('yes')}
+              className={`px-4 py-2 rounded-lg border transition-colors ${
+                filter === 'yes'
+                  ? 'bg-green-500 text-white border-green-500'
+                  : 'bg-gray-100 text-gray-700 border-gray-300 hover:bg-gray-200'
+              }`}
+            >
+              Attending
+            </button>
+
+            <button
+              onClick={() => setFilter('no')}
+              className={`px-4 py-2 rounded-lg border transition-colors ${
+                filter === 'no'
+                  ? 'bg-red-500 text-white border-red-500'
+                  : 'bg-gray-100 text-gray-700 border-gray-300 hover:bg-gray-200'
+              }`}
+            >
+              Declined
+            </button>
         </div>
 
         <div className="flex gap-2">

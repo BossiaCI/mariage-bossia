@@ -96,6 +96,36 @@ export async function sendRSVPEmail(data: any[]) {
 }
 
 
+interface GetRSVPsOptions {
+  page?: number;
+  pageSize?: number;
+  countOnly?: boolean;
+  filterAttendance?: 'all' | 'yes' | 'no';
+}
+
+export async function getRSVPs(options: GetRSVPsOptions = {}) {
+  const { page = 1, pageSize = 10, countOnly = false, filterAttendance = 'all' } = options;
+
+  // Build Prisma where filter
+  const where: any = {};
+  if (filterAttendance === 'yes') where.attendance = true;
+  if (filterAttendance === 'no') where.attendance = false;
+
+  if (countOnly) {
+    return await prisma.confirmation.count({ where });
+  }
+
+  const rsvps = await prisma.confirmation.findMany({
+    where,
+    orderBy: { createdAt: 'desc' },
+    skip: (page - 1) * pageSize,
+    take: pageSize,
+  });
+
+  return rsvps;
+}
+
+
 function toBoolean(value: any): boolean {
   if (typeof value === 'boolean') return value;
 
