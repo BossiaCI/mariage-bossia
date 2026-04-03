@@ -20,6 +20,8 @@ model Confirmation {
   email     String? @unique
   message   String?
   dietary   String?
-  guests    Int?
+  guests    Int?      @default(0)
+  accompanyingGuests String?
+  checkedIn  Boolean  @default(false)
   createdAt DateTime @default(now())
   } 

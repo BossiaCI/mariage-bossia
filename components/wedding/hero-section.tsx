@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Plane } from "lucide-react"
 import { useTranslations } from "next-intl";
+import Countdown from "./Countdown";
 
 export function HeroSection() {
 
@@ -10,6 +11,11 @@ export function HeroSection() {
   
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-background">
+
+      <Countdown targetDate="2026-09-26T00:00:00" />
+
+      <br /><br />
+
       {/* Decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div

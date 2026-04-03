@@ -72,7 +72,9 @@
     "guests": "Nombre d'accompagnants (veillez à ce qu'ils soient bien invités par les mariés)",
     "dietary": "Restrictions alimentaires",
     "placeholderDietary": "Végétarien, allergies, etc.",
-    "submit": "Envoyer ma réponse"
+    "submit": "Envoyer ma réponse",
+    "accompanyingGuests": "Nom des accompagnants",
+    "placeholderAccompanyingGuests": "Veuillez indiquer les noms de vos accompagnants séparés par des points virgules"
   },
   "Story": {
     "title": "Notre Histoire",
@@ -173,6 +175,10 @@
     "title": "Galerie",
     "description": "Notre famille et nos aventures",
     "subtitle": "Des souvenirs suspendus dans le temps"
+  },
+
+  "Countdown": {
+    "dayIsHere": "Le grand jour est arrivé !"
   },
 
 

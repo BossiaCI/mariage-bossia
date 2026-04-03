@@ -71,7 +71,9 @@
         "placeholderDietary": "Vegetariano, alergias, etc.",
         "message": "Mensagem para os noivos (opcional)",
         "placeholderMessage": "Compartilhe seus votos, uma anedota ou simplesmente o seu entusiasmo...",
-        "submit": "Confirmar a resposta"
+        "submit": "Confirmar a resposta",
+        "accompanyingGuests": "Nome dos acompanhantes",
+        "placeholderAccompanyingGuests": "Por favor, indique os nomes dos seus acompanhantes separados por ponto e vírgula"
     },
     "Story": {
         "title": "A Nossa História",
@@ -169,6 +171,10 @@
       "title": "Galeria",
       "description": "Nossa família e nossas aventuras",
       "subtitle": "Memórias suspensas no tempo"
+    },
+
+    "Countdown": {
+      "dayIsHere": "O grande dia chegou!"
     },
 
   "NotFoundPage": {
