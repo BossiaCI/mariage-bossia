@@ -11,6 +11,7 @@ import { RSVPSection } from "@/components/wedding/rsvp-section"
 import { Footer } from "@/components/wedding/footer"
 import { DroneGallery } from "@/components/wedding/gallery-section"
 import { ShelterSection } from "@/components/wedding/shelter-section"
+import GiftSection from "@/components/wedding/gift-section"
 
 export default function WeddingPage() {
   return (
@@ -19,6 +20,7 @@ export default function WeddingPage() {
       <HeroSection />
       <CheckinSection />
       <RSVPSection />
+      <GiftSection />
       <StorySection />
       <PassportSection />
       {/* <ParachuteSection /> */}

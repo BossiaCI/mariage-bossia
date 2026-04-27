@@ -163,6 +163,18 @@
        "description4": "“Quinta do Roseiral” - Estrada de Sto Isidoro, 2655-000 Ericeira, Portugal"
     },
 
+    "Gift": {
+      "title": "Edénia & Bossia - A nossa lista",
+      "subtitle": "A vossa presença já é o nosso maior presente",
+      "body": "Para aqueles que nos pediram, preparámos uma pequena seleção de artigos que gostaríamos de ter na nossa casa comum. Não há qualquer obrigação — o simples facto de partilhar este dia convosco significa muito para nós.",
+      "registry": "Lista de presentes",
+      "registry-title":"Consulte a nossa lista de desejos",
+      "registry-body": "Uma seleção de artigos que escolhemos para a nossa vida a dois.",
+      "link-element": "Descubra a nossa lista de casamento",
+      "link-body": "Abrir numa nova aba",
+      "lang":"pt"
+    },
+
     "Footer": {
       "footerMessage": "26 de Setembro de 2026 • Lisboa, Portugal"
     },

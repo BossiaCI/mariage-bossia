@@ -167,6 +167,18 @@
     "description4": "“Quinta do Roseiral” - Estrada de Sto Isidoro, 2655-000 Ericeira, Portugal"
   },
 
+  "Gift": {
+    "title": "Edénia & Bossia - Notre Liste",
+    "subtitle": "Votre présence est déjà notre plus beau cadeau",
+    "body": "Pour ceux qui nous l'ont demandé, nous avons préparé une petite sélection d'articles que nous aimerions avoir dans notre foyer commun. Il n'y a absolument aucune obligation — le simple fait de partager cette journée avec vous compte énormément pour nous.",
+    "registry": "Liste de cadeaux",
+    "registry-title":"Consultez notre liste de souhaits",
+    "registry-body": "Une sélection d'articles que nous avons choisis pour notre vie à deux.",
+    "link-element": "Découvrez notre liste de mariage",
+    "link-body": "Ouvrir dans un nouvel onglet",
+    "lang": "fr"
+  },
+
   "Footer": {
     "footerMessage": "26 Septembre 2026 • Lisbonne, Portugal"
   },
