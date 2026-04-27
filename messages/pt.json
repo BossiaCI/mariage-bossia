@@ -172,7 +172,12 @@
       "registry-body": "Uma seleção de artigos que escolhemos para a nossa vida a dois.",
       "link-element": "Descubra a nossa lista de casamento",
       "link-body": "Abrir numa nova aba",
-      "lang":"pt"
+      "lang":"pt",
+      "Gifts": "Lista de presentes",
+      "Wishes":"Desejos",
+      "send-gift": "Enviar um presente diretamente",
+      "send-body": "Uma doação em dinheiro é muito bem-vinda. Cada contribuição ajuda-nos a construir a nossa nova fase.",
+      "secure": "Os seus dados são mantidos em sigilo e segurança"
     },
 
     "Footer": {

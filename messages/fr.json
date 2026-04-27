@@ -170,13 +170,18 @@
   "Gift": {
     "title": "Edénia & Bossia - Notre Liste",
     "subtitle": "Votre présence est déjà notre plus beau cadeau",
-    "body": "Pour ceux qui nous l'ont demandé, nous avons préparé une petite sélection d'articles que nous aimerions avoir dans notre foyer commun. Il n'y a absolument aucune obligation — le simple fait de partager cette journée avec vous compte énormément pour nous.",
+    "body": "Pour ceux qui nous demandent comment nous faire plaisir : sachez que votre présence est notre priorité. Mais si vous avez envie de nous donner un petit coup de pouce pour nos aventures de jeunes mariés, vous pouvez retrouver notre liste de souhaits ici.",
     "registry": "Liste de cadeaux",
     "registry-title":"Consultez notre liste de souhaits",
     "registry-body": "Une sélection d'articles que nous avons choisis pour notre vie à deux.",
     "link-element": "Découvrez notre liste de mariage",
     "link-body": "Ouvrir dans un nouvel onglet",
-    "lang": "fr"
+    "lang": "fr",
+    "Gifts": "Cadeaux",
+    "Wishes":"Veoux",
+    "send-gift": "Envoyer un cadeau directement",
+    "send-body": "Tout don financier est le bienvenu. Chaque contribution nous aide à construire notre nouvelle section.",
+    "secure": "Vos données sont conservées en toute confidentialité et sécurité"
   },
 
   "Footer": {
