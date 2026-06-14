@@ -52,7 +52,7 @@
   },
     "Rsvp": {
         "title": "Confirme a sua presença",
-        "description": "Agradecemos que nos confirme a sua presença até dia 1 de agosto de 2026",
+        "description": "Agradecemos que nos confirme a sua presença até dia 26 de Agosto de 2026",
         "warning": "Número de acompanhantes (certifique-se que foram convidados pelos noivos)",
         "firstName": "Nome próprio",
         "placeholderFirstName": "Primeiro nome",
@@ -124,14 +124,14 @@
         "status": "Estado",
         "boarding": "Embarque",
         "ambiance": "« Embarque do voo EB-26.09 com destino a Lisboa – Ericeira. Os passageiros são convidados a se dirigir ao portão de embarque 016. »",
-        "ceremony": "Cerimónia",
+        "ceremony": "Cerimónia civil",
       "jardin": "Jardins",
-        "cocktail": "Pátio",
+        "cocktail": "Cocktails",
         "terrasse": "Terraço",
         "diner": "Jantar",
         "grand-salon": "Salão Principal",
         "cake-cutting": "Corte do Bolo",
-        "dance": "Abertura do Salão",
+        "dance": "Abertura do Salão e bouquet",
         "free-buffet": "Buffet Livre"
     },
 

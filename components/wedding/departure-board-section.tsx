@@ -43,7 +43,7 @@ export function DepartureBoardSection() {
   const flights = [
   {
     flight: "EB-26.09",
-    destination: "Ericeira, Portugal",
+    destination: "Welcome Drink",
     gate: "QUINTA DO ROSEIRAL",
     time: "15:30",
     status: "ON TIME",

@@ -53,7 +53,7 @@
 
   "Rsvp": {
     "title": "Confirmez votre présence",
-    "description": "Nous vous remercions de confirmer votre présence avant le 1er août 2026.",
+    "description": "Nous vous remercions de confirmer votre présence avant le 26 Août 2026.",
     "warning": "Nombre d’accompagnants (Assurez-vous qu'ils ont bien été invités par les mariés.)",
     "firstName": "Prénom",
     "placeholderFirstName": "Votre prénom",
@@ -126,7 +126,7 @@
     "boarding": "Embarquement",
     "departed": "Parti",
     "ambiance": "« Embarquement du vol EB-26.09 à destination de Lisbonne – Ericeira. Les passagers sont invités à rejoindre la porte d’embarquement 016. »",
-    "ceremony": "CERÉMONIE",
+    "ceremony": "CERÉMONIE CIVILE",
     "jardin": "JARDINS",
     "cocktail": "COCKTAIL",
     "terrasse": "TERRASSE",
@@ -134,7 +134,7 @@
     "grand-salon": "GRAND SALON",
     "cake-cutting": "COUPE DU GÂTEAU",
     "gardens": "Jardins",
-    "dance": "OUVERTURE DU SALON",
+    "dance": "OUVERTURE DU SALON et BOUQUET",
     "free-buffet": "BUFFET LIBRE"
   },
 
