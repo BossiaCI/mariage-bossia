@@ -33,7 +33,7 @@ const photos: Photo[] = [
     id: 3,
     url: '/images/party-rock.jpeg',
     alt: 'Luxury wedding ceremony',
-    location: 'reveillons de Noël, Madrid',
+    location: 'réveillon de noël, Madrid',
     category: 'wedding'
   },
   {
