@@ -33,7 +33,7 @@ const photos: Photo[] = [
     id: 3,
     url: '/images/party-rock.jpeg',
     alt: 'Luxury wedding ceremony',
-    location: 'Chatelet les halles, Paris',
+    location: 'reveillons de Noël, Madrid',
     category: 'wedding'
   },
   {
@@ -219,7 +219,7 @@ export function DroneGallery() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-rose-50 via-amber-50 to-pink-50 py-16 px-4 overflow-hidden relative">
       {/* Particules dorées flottantes */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden">
+      <div className="fixed inset-0 pointer-events-none overflow">
         {dots.map((dot, i) => (
           <motion.div key={i}
             className="absolute w-1 h-1 bg-amber-400 rounded-full"
