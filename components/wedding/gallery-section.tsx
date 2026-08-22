@@ -15,13 +15,48 @@ interface Photo {
 }
 
 const photos: Photo[] = [
-  // {
-  //   id: 1,
-  //   url: 'https://images.unsplash.com/photo-1700062069869-0c59ff21fa3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB3ZWRkaW5nJTIwY2VyZW1vbnl8ZW58MXx8fHwxNzY4NjkyNjU5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-  //   alt: 'Luxury wedding ceremony',
-  //   location: 'Château de Versailles',
-  //   category: 'wedding'
-  // },
+  {
+    id: 1,
+    url: '/images/parc-des-sceaux.jpeg',
+    alt: 'Luxury wedding ceremony',
+    location: 'Parc des Sceaux, Paris',
+    category: 'wedding'
+  },
+  {
+    id: 2,
+    url: '/images/lille.jpeg',
+    alt: 'Luxury wedding ceremony',
+    location: 'centre ville, Lille',
+    category: 'wedding'
+  },
+  {
+    id: 3,
+    url: '/images/party-rock.jpeg',
+    alt: 'Luxury wedding ceremony',
+    location: 'Chatelet les halles, Paris',
+    category: 'wedding'
+  },
+  {
+    id: 4,
+    url: '/images/madrid.jpeg',
+    alt: 'Luxury wedding ceremony',
+    location: 'Plaza Mayor, Madrid',
+    category: 'wedding'
+  },
+  {
+    id: 5,
+    url: '/images/issy-les-moulineaux.jpeg',
+    alt: 'Luxury wedding ceremony',
+    location: 'l\'Ile de saint germain, Issy-les-Moulineaux',
+    category: 'wedding'
+  },
+  {
+    id: 6,
+    url: '/images/eiffel-tower.jpeg',
+    alt: 'Luxury wedding ceremony',
+    location: 'Tour Eiffel, Paris',
+    category: 'wedding'
+  },
   
 ];
 
