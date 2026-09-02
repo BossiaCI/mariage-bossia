@@ -19,7 +19,7 @@ export default function WeddingPage() {
       <Navigation />
       <HeroSection />
       <CheckinSection />
-      <RSVPSection />
+      {/* <RSVPSection /> */}
       <GiftSection />
       <StorySection />
       <PassportSection />
